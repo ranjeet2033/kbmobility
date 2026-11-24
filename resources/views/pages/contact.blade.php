@@ -1,22 +1,22 @@
 @extends('layouts.main')
 
-@section('title', 'Contact Us – Infravolte Mobility Prayagraj | +91 9277250171')
-@section('meta_description', 'Contact Infravolte Mobility for EV service, spare parts & scooter sales in Prayagraj. Visit us at JK15 Kalindipuram or call +91 9277250171. Open Mon–Sat 9am–7pm.')
+@section('title', 'Contact Us – KB Mobility Uttam Nagar, New Delhi | +91 8808363701')
+@section('meta_description', 'Contact KB Mobility for EV service, spare parts & scooter sales in New Delhi. Visit us at Hastsal Village, Near Hanuman Dharam Kanta, Uttam Nagar West or call +91 8808363701. Open Mon–Sat 9am–7pm.')
 
 @section('content')
-<div class="bg-white py-20 border-b border-gray-100 relative overflow-hidden">
+<div class="bg-white py-12 sm:py-16 border-b border-gray-100 relative overflow-hidden">
     <!-- Abstract Hexagon Background (CSS representation) -->
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at right center, #75d118 0%, transparent 60%);"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">Contact <span class="text-[#4CAF50]">Infravolte Mobility</span></h1>
-            <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Contact <span class="text-[#4CAF50]">KB Mobility</span></h1>
+            <p class="mt-3 max-w-2xl text-base sm:text-lg text-gray-600 mx-auto">
                 Whether you need technical support, want to inquire about a new scooter, or need rare spare parts, our team is here to help.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             <!-- Contact Info -->
             <div>
                 <div class="bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 h-full">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="ml-6">
                                 <dt class="text-lg font-medium text-gray-900 mb-1">Phone Number</dt>
-                                <dd class="text-base text-gray-600"><a href="tel:+919277250171" class="hover:text-[#4CAF50] transition-colors">+91 9277250171</a></dd>
+                                <dd class="text-base text-gray-600"><a href="tel:+918808363701" class="hover:text-[#4CAF50] transition-colors font-semibold">+91 8808363701</a></dd>
                                 <dd class="text-sm text-gray-500 mt-1">Mon-Sat 9am to 7pm</dd>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="ml-6">
                                 <dt class="text-lg font-medium text-gray-900 mb-1">Email</dt>
-                                <dd class="text-base text-gray-600"><a href="mailto:infravoltemobility@gmail.com" class="hover:text-[#4CAF50] transition-colors">infravoltemobility@gmail.com</a></dd>
+                                <dd class="text-base text-gray-600"><a href="mailto:kbmobility65@gmail.com" class="hover:text-[#4CAF50] transition-colors font-semibold">kbmobility65@gmail.com</a></dd>
                             </div>
                         </div>
 
@@ -55,11 +55,11 @@
                                 </div>
                             </div>
                             <div class="ml-6">
-                                <dt class="text-lg font-medium text-gray-900 mb-1">Service Center HQ</dt>
-                                <dd class="text-base text-gray-600 leading-relaxed">
-                                    CQGW+VR5, JK15 Kalindipuram<br>
-                                    Prayagraj, Roshan Bag, Daiwghat<br>
-                                    Uttar Pradesh 211015
+                                <dt class="text-lg font-medium text-gray-900 mb-1">Showroom & Workshop Address</dt>
+                                <dd class="text-base text-gray-700 leading-relaxed font-medium">
+                                    Uttam Nagar West, Hastsal Village,<br>
+                                    Near Hanuman Dharam Kanta,<br>
+                                    New Delhi - 110059
                                 </dd>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                 <svg class="w-20 h-20 text-gray-800 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Fast-Track Your Request</h3>
                 <p class="text-lg text-gray-600 mb-8 max-w-md font-sans">
-                    Skip the email queue. If you need a repair or a specific spare part, use our dedicated booking system. Our diagnostic team gets instantly notified.
+                    Skip the wait. If you need a vehicle repair, battery test, or a specific spare part, use our dedicated booking system. Our team gets instantly notified.
                 </p>
                 <a href="{{ route('book') }}" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-md shadow-[0_0_20px_rgba(117,209,24,0.3)] text-base font-bold uppercase tracking-widest text-black bg-[#4CAF50] hover:bg-[#43a047] transition-all transform hover:-translate-y-1">
                     Book Service Now
@@ -83,7 +83,7 @@
 </div>
 
 <!-- Map Section -->
-<div class="w-full h-96 bg-green-50 border-t border-gray-100 relative z-0">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639435.7279577325!2d76.8031845777325!3d27.025853827828694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398535005f4a65e5%3A0x4b49c1d13a248a18!2sInfravolt%20E%20mobility!5e0!3m2!1sen!2sin!4v1777149599117!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Infravolte Mobility Location Map"></iframe>
+<div class="w-full h-[450px] bg-green-50 border-t border-gray-100 relative z-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.035127593397!2d77.05672867528904!3d28.62870927566708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d050062538925%3A0xa366d6f997e84569!2sKB%20Mobility!5e0!3m2!1sen!2sin!4v1795534495777!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="KB Mobility Google Map Location"></iframe>
 </div>
 @endsection

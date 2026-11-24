@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Buy E-Rickshaw in Prayagraj – Passenger & Cargo | Infravolte Mobility')
-@section('meta_description', 'Buy commercial e-rickshaws in Prayagraj from Infravolte Mobility. Passenger & cargo models, 80–100km range, 1000W–1200W motor. Best EV rickshaw price in UP.')
+@section('title', 'Buy E-Rickshaw in Uttam Nagar, New Delhi – Passenger & Cargo | KB Mobility')
+@section('meta_description', 'Buy commercial e-rickshaws in New Delhi from KB Mobility. Passenger & cargo models, 80–100km range, 1000W–1200W motor in Uttam Nagar West. Best EV rickshaw price in Delhi.')
 
 @section('content')
 
 <!-- Modern Hero Section -->
-<div class="relative bg-gradient-to-b from-gray-50 to-white pt-16 pb-32 overflow-hidden border-b border-gray-100">
+<div class="relative bg-gradient-to-b from-gray-50 to-white pt-12 pb-16 sm:pt-16 sm:pb-20 overflow-hidden border-b border-gray-100">
     <!-- Decorative background elements -->
     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
     <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-indigo-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
@@ -14,20 +14,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-sm mb-6 shadow-sm">
             <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2"></span>
-            Commercial Mobility
+            Commercial Mobility in Delhi NCR
         </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 sm:mb-6 font-heading">
             Heavy-Duty <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">E-Rickshaws</span>
         </h1>
-        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Built for maximum payload and minimum maintenance. Power your business with our commercial-grade electric rickshaws designed for India's demanding roads.
+        <p class="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Built for maximum payload and minimum maintenance. Power your passenger or logistics business with our commercial-grade electric rickshaws designed for Delhi's roads.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#models" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_25px_-5px_rgba(37,99,235,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
+            <a href="#models" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(37,99,235,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
                 View Vehicles
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('contact') }}" class="bg-white text-gray-800 hover:text-blue-600 px-8 py-4 rounded-full font-bold text-lg border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
+            <a href="{{ route('contact') }}" class="bg-white text-gray-800 hover:text-blue-600 px-8 py-3.5 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
                 Contact Sales
             </a>
         </div>
@@ -35,12 +35,12 @@
 </div>
 
 <!-- E-Rickshaw Grid Section -->
-<div class="py-24 bg-white" id="models">
+<div class="py-12 sm:py-16 bg-white" id="models">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-16">
+        <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Power Your Business</h2>
-            <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">Whether you are transporting passengers or delivering cargo, our E-Rickshaws provide the best ROI.</p>
+            <p class="text-gray-500 mt-3 max-w-2xl mx-auto text-base sm:text-lg">Whether you are transporting passengers or delivering cargo across New Delhi, our E-Rickshaws provide the best ROI.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -52,13 +52,12 @@
                     <span class="bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full shadow-sm border border-gray-100">Passenger Pro</span>
                 </div>
                 
-                <div class="relative h-72 overflow-hidden bg-gradient-to-tr from-blue-50 to-indigo-50/30 flex items-center justify-center p-8">
+                <div class="relative h-72 overflow-hidden bg-gradient-to-tr from-blue-50 to-indigo-50/30 flex items-center justify-center p-4">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/E-Rickshaw_in_India.jpg/640px-E-Rickshaw_in_India.jpg"
-                        alt="Passenger E-Rickshaw India"
+                        src="{{ asset('images/erickshaw-passenger.jpg') }}"
+                        alt="KB Mobility Passenger E-Rickshaw"
                         class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700 drop-shadow-xl"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/eff6ff/2563eb?text=Passenger+E-Rickshaw';"
                     >
                 </div>
                 
@@ -98,13 +97,12 @@
                     <span class="bg-white/90 backdrop-blur-sm text-indigo-600 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full shadow-sm border border-gray-100">Cargo & Logistics</span>
                 </div>
                 
-                <div class="relative h-72 overflow-hidden bg-gradient-to-tr from-indigo-50 to-purple-50/30 flex items-center justify-center p-8">
+                <div class="relative h-72 overflow-hidden bg-gradient-to-tr from-indigo-50 to-purple-50/30 flex items-center justify-center p-4">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/E-Rickshaw_for_goods_transport.jpg/640px-E-Rickshaw_for_goods_transport.jpg"
-                        alt="Cargo E-Rickshaw India"
+                        src="{{ asset('images/erickshaw-cargo.jpg') }}"
+                        alt="KB Mobility Cargo Loader E-Rickshaw"
                         class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700 drop-shadow-xl"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/f8fafc/4f46e5?text=Cargo+E-Rickshaw';"
                     >
                 </div>
                 
@@ -141,10 +139,14 @@
     </div>
 </div>
 
+        </div>
+    </div>
+</div>
+
 <!-- Business Benefits Section -->
-<div class="bg-gray-50 py-24 border-t border-gray-100">
+<div class="bg-gray-50 py-12 sm:py-16 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-10">
             <h2 class="text-3xl font-extrabold text-gray-900">Why Choose Our E-Rickshaws?</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

@@ -1,21 +1,21 @@
 @extends('layouts.main')
 
-@section('title', 'Book EV Service Online – Infravolte Mobility Prayagraj')
-@section('meta_description', 'Book an EV service appointment with Infravolte Mobility in Prayagraj. Battery repair, motor service, controller fix & more. Fast response, expert technicians.')
+@section('title', 'Book EV Service Online – KB Mobility Uttam Nagar, New Delhi')
+@section('meta_description', 'Book an EV service appointment with KB Mobility in Uttam Nagar West, New Delhi. Battery repair, motor service, controller fix & more. Fast response, expert technicians.')
 
 @section('content')
-<div class="relative overflow-hidden bg-white py-16 px-4 sm:px-6 lg:py-24 lg:px-8 xl:pl-12 border-b border-gray-100">
+<div class="relative overflow-hidden bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at center, #75d118 0%, transparent 60%);"></div>
-    <div class="max-w-3xl mx-auto relative z-10 bg-gray-50 p-8 md:p-12 rounded-2xl border border-gray-100 shadow-xl shadow-gray-200">
+    <div class="max-w-3xl mx-auto relative z-10 bg-gray-50 p-6 sm:p-10 md:p-12 rounded-2xl border border-gray-100 shadow-xl shadow-gray-200">
         
-        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-sm tracking-widest uppercase mb-4">
+        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3">
             <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
             <span>Priority Support</span>
         </div>
-        <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
             Book EV Service
         </h2>
-        <p class="mt-4 text-lg text-gray-600">
+        <p class="mt-3 text-base sm:text-lg text-gray-600">
             Fill out the form below to schedule a diagnostic or repair session. Our team will contact you shortly to confirm the appointment.
         </p>
 

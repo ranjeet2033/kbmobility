@@ -1,11 +1,13 @@
 User-agent: *
 Allow: /
 
-# Block admin and internal routes
+# Block admin, auth, and internal routes
 Disallow: /admin/
+Disallow: /dashboard
+Disallow: /profile
 Disallow: /login
 Disallow: /register
 Disallow: /password/
 Disallow: /api/
 
-Sitemap: http://infravoltemobility.com/sitemap.xml
+Sitemap: https://kbmobility.com/sitemap.xml

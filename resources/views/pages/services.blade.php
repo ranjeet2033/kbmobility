@@ -1,22 +1,22 @@
 @extends('layouts.main')
 
-@section('title', 'EV Repair Services in Prayagraj – Battery, Motor & Controller')
-@section('meta_description', 'Expert EV repair services in Prayagraj – lithium battery diagnostic & repair, BLDC motor service, controller repair, EV charger fix & full vehicle maintenance by Infravolte Mobility.')
+@section('title', 'EV Repair Services in Uttam Nagar, New Delhi – Battery, Motor & Controller | KB Mobility')
+@section('meta_description', 'Expert EV repair services in Uttam Nagar West, New Delhi – lithium battery diagnostic & repair, BLDC motor service, controller repair, EV charger fix & maintenance by KB Mobility.')
 
 @section('content')
-<div class="relative overflow-hidden bg-white py-20 border-b border-gray-100">
+<div class="relative overflow-hidden bg-white py-12 sm:py-16 border-b border-gray-100">
     <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at center, #75d118 0%, transparent 50%);"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-sm tracking-widest uppercase mb-4">
+        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3">
             <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
             <span>What We Do</span>
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Our Services</h1>
-        <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive solutions for your electric vehicles. From battery diagnostics to complete overhauls.</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">Our Services</h1>
+        <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive solutions for your electric vehicles. From battery diagnostics to complete overhauls.</p>
     </div>
 </div>
 
-<div class="py-20 bg-white">
+<div class="py-12 sm:py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <!-- Service Detailed 1 -->

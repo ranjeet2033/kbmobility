@@ -1,42 +1,61 @@
 @extends('layouts.main')
 
-@section('title', 'About Us – Infravolte Mobility | Prayagraj EV Dealer')
-@section('meta_description', 'Learn about Infravolte Mobility – Prayagraj’s leading electric vehicle service center & dealer. Our mission is to make EV ownership affordable and hassle-free across India.')
+@section('title', 'About Us – KB Mobility | New Delhi EV Dealer & Workshop')
+@section('meta_description', 'Learn about KB Mobility – New Delhi’s trusted electric vehicle service center & dealer located in Uttam Nagar West. Our mission is to make EV ownership affordable, reliable, and hassle-free.')
 
 @section('content')
-<div class="relative bg-white overflow-hidden py-24 border-b border-gray-100">
-    <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at center, #75d118 0%, transparent 60%);"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Pioneering EV Repair <span class="text-[#4CAF50]">in India</span></h1>
-        <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded with a vision to build a sustainable future, Infravolte Mobility is India's leading aggregator for electric vehicle service, parts, and sales. We are dedicated to keeping your electric drive smooth, efficient, and reliable.
+<!-- Modern Hero Banner Section -->
+<div class="relative bg-gradient-to-b from-gray-50 to-white py-16 overflow-hidden border-b border-gray-100">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-green-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-emerald-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full bg-blue-50 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-[#4CAF50] mr-2"></span>
+            About KB Mobility • New Delhi
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+            Pioneering The <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#27ae60]">Future of EV</span> in Delhi
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Founded with a vision to build a sustainable, pollution-free future, KB Mobility is New Delhi's trusted hub for electric vehicle sales, diagnostic repair, and OEM spare parts. We are dedicated to keeping your electric drive smooth, efficient, and reliable.
         </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{{ route('products') }}" class="bg-gradient-to-r from-[#4CAF50] to-[#27ae60] hover:from-[#43a047] hover:to-[#2ecc71] text-white px-8 py-4 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(76,175,80,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
+                Explore Our Scooters
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="{{ route('contact') }}" class="bg-white text-gray-800 hover:text-[#4CAF50] px-8 py-4 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
+                Contact & Visit Us
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="py-20 bg-white">
+<div class="py-12 sm:py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-                <img class="w-full rounded-2xl shadow-xl shadow-gray-200 border border-gray-100 transform hover:scale-[1.02] transition-transform duration-500"
-                    src="{{ asset('assets/image/infro.jpg') }}"
-                    onerror="this.onerror=null; this.src='{{ asset('images/gallery-showroom.jpg') }}';"
-                    alt="Infravolte Mobility Showroom">
+                <img class="w-full rounded-2xl shadow-xl shadow-gray-200 border border-gray-100 transform hover:scale-[1.02] transition-transform duration-500 object-cover h-[350px] sm:h-[400px]"
+                    src="{{ asset('images/kb-showroom-1.jpg') }}"
+                    alt="KB Mobility Showroom New Delhi">
             </div>
-            <div class="mt-12 lg:mt-0">
-                <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-sm tracking-widest uppercase mb-4 px-3 py-1 bg-green-50 rounded-full border border-green-100">
+            <div class="mt-10 lg:mt-0">
+                <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3 px-3 py-1 bg-green-50 rounded-full border border-green-100">
                     <span>Our Story</span>
                 </div>
-                <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight mb-6 mt-2">The Engine Behind Infravolte Mobility</h2>
-                <div class="space-y-6 text-lg text-gray-600 leading-relaxed font-sans">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight mb-4">The Engine Behind KB Mobility</h2>
+                <div class="space-y-4 text-base text-gray-600 leading-relaxed font-sans">
                     <p>
-                        As the adoption of electric scooters and rickshaws surged, a massive gap emerged in the after-sales service market. Traditional mechanics lacked the electronics expertise, and OEM dealerships were often too slow or too expensive.
+                        As the adoption of electric scooters and rickshaws rapidly expands across Delhi NCR, riders need dependable service, immediate spare parts, and transparent vehicle sales.
                     </p>
                     <p>
-                        Infravolte Mobility was born to bridge this gap. We partner with highly skilled, electronics-certified technicians capable of deep-level diagnostics. Whether it's a dead BMS, a blown controller MOSFET, or simply aging lithium cells, we isolate the problem and replace only what's necessary.
+                        KB Mobility was established in Uttam Nagar West, New Delhi to bridge this gap. We combine a full-fledged sales showroom with state-of-the-art diagnostic facilities for battery repair, motor controller troubleshooting, and scheduled EV maintenance.
                     </p>
                     <p>
-                        Today, we don't just repair; we supply OEM-grade spare parts and operate as an authorized dealership for premium new EV brands. Our mission is to accelerate the transition to sustainable transport by ensuring every EV stays on the road longer.
+                        Today, we supply high-quality electric scooters, commercial e-rickshaws, and OEM-grade components. Located near Hanuman Dharam Kanta in Hastsal Village, our dedicated team is always ready to assist you on your journey towards clean green electric transport.
                     </p>
                 </div>
             </div>
@@ -45,7 +64,7 @@
 </div>
 
 <div class="bg-gray-50 border-y border-gray-100">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div class="p-6">
                 <div class="w-16 h-16 mx-auto bg-green-50 border border-gray-100 text-[#4CAF50] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-sm">

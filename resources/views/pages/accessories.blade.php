@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'EV Spare Parts & Accessories Prayagraj – Battery, Motor, Controller')
-@section('meta_description', 'Buy genuine EV spare parts in Prayagraj from Infravolte Mobility – lithium battery packs, BLDC hub motors, smart controllers, 48V/60V/72V chargers. OEM certified quality.')
+@section('title', 'EV Spare Parts & Accessories New Delhi – Battery, Motor, Controller | KB Mobility')
+@section('meta_description', 'Buy genuine EV spare parts in New Delhi from KB Mobility – lithium battery packs, BLDC hub motors, smart controllers, 48V/60V/72V chargers in Uttam Nagar West. OEM certified quality.')
 
 @section('content')
 
 <!-- Modern Hero Section -->
-<div class="relative bg-gradient-to-b from-gray-50 to-white pt-16 pb-32 overflow-hidden border-b border-gray-100">
+<div class="relative bg-gradient-to-b from-gray-50 to-white pt-12 pb-16 sm:pt-16 sm:pb-20 overflow-hidden border-b border-gray-100">
     <!-- Decorative background elements -->
     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-purple-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
     <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-pink-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
@@ -14,20 +14,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div class="inline-flex items-center px-4 py-2 rounded-full bg-purple-50 border border-purple-100 text-purple-600 font-semibold text-sm mb-6 shadow-sm">
             <span class="flex h-2 w-2 rounded-full bg-purple-600 mr-2"></span>
-            OEM Certified
+            OEM Certified Quality
         </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 sm:mb-6 font-heading">
             Genuine <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Spare Parts</span>
         </h1>
-        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Keep your electric vehicle running like new. Explore our complete catalog of certified replacement parts with full compatibility guarantees.
+        <p class="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Keep your electric vehicle running at peak performance. Explore our complete catalog of certified replacement parts with compatibility warranty.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#parts" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_25px_-5px_rgba(147,51,234,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
+            <a href="#parts" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3.5 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(147,51,234,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
                 Browse Parts
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
-            <a href="{{ route('book') }}" class="bg-white text-gray-800 hover:text-purple-600 px-8 py-4 rounded-full font-bold text-lg border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
+            <a href="{{ route('book') }}" class="bg-white text-gray-800 hover:text-purple-600 px-8 py-3.5 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
                 Book Repair
             </a>
         </div>
@@ -35,12 +35,12 @@
 </div>
 
 <!-- Spare Parts Grid -->
-<div class="py-24 bg-white" id="parts">
+<div class="py-12 sm:py-16 bg-white" id="parts">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-16">
+        <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Essential Components</h2>
-            <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">High-quality components sourced directly from manufacturers.</p>
+            <p class="text-gray-500 mt-3 max-w-2xl mx-auto text-base sm:text-lg">High-quality components sourced directly for 2-wheeler scooties and 3-wheeler e-rickshaws.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -49,11 +49,10 @@
             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-purple-200 transition-all duration-300 group shadow-sm hover:shadow-xl flex flex-col">
                 <div class="relative h-48 overflow-hidden bg-purple-50 p-6 flex items-center justify-center">
                     <img
-                        src="https://5.imimg.com/data5/SELLER/Default/2022/12/NC/EB/YO/3835129/lithium-ion-battery-pack-for-ev.jpg"
-                        alt="Lithium battery cells"
+                        src="{{ asset('images/service-battery.png') }}"
+                        alt="Lithium battery packs and cells"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/500x350/f3e8ff/9333ea?text=Battery+Pack';"
                     >
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -61,7 +60,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Battery Packs & Cells</h4>
-                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Grade A lithium-ion cells with advanced BMS protection for all major brands.</p>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Grade A lithium-ion cells with smart BMS protection for all major EV scooter brands.</p>
                     <a href="{{ route('contact') }}" class="mt-auto w-full inline-flex justify-center items-center px-4 py-3 border border-gray-200 hover:border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg text-sm font-bold uppercase tracking-wide transition-colors text-gray-900">
                         Get Quote
                     </a>
@@ -72,11 +71,10 @@
             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-purple-200 transition-all duration-300 group shadow-sm hover:shadow-xl flex flex-col">
                 <div class="relative h-48 overflow-hidden bg-purple-50 p-6 flex items-center justify-center">
                     <img
-                        src="https://5.imimg.com/data5/SELLER/Default/2022/5/RL/SK/PS/3835129/electric-vehicle-controller.jpg"
-                        alt="BLDC Controller"
+                        src="{{ asset('images/service-maintenance.png') }}"
+                        alt="Smart BLDC Controller"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/500x350/f3e8ff/9333ea?text=BLDC+Controller';"
                     >
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -95,11 +93,10 @@
             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-purple-200 transition-all duration-300 group shadow-sm hover:shadow-xl flex flex-col">
                 <div class="relative h-48 overflow-hidden bg-purple-50 p-6 flex items-center justify-center">
                     <img
-                        src="https://5.imimg.com/data5/SELLER/Default/2021/7/GN/RA/CR/3835129/bldc-hub-motor.jpg"
-                        alt="Hub Motor"
+                        src="{{ asset('images/service-motor.png') }}"
+                        alt="BLDC Hub Motor"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/500x350/f3e8ff/9333ea?text=BLDC+Hub+Motor';"
                     >
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -118,11 +115,10 @@
             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-purple-200 transition-all duration-300 group shadow-sm hover:shadow-xl flex flex-col">
                 <div class="relative h-48 overflow-hidden bg-purple-50 p-6 flex items-center justify-center">
                     <img
-                        src="https://5.imimg.com/data5/SELLER/Default/2022/7/VO/YZ/FO/3835129/ev-charger-48v-60v.jpg"
-                        alt="EV Charger"
+                        src="{{ asset('images/service-charger.png') }}"
+                        alt="EV Fast Charger"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
                         loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/500x350/f3e8ff/9333ea?text=Fast+Charger';"
                     >
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
