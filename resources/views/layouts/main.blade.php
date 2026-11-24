@@ -120,8 +120,12 @@
     <!-- Alpine.js for Mobile Menu -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <!-- Pre-compiled Tailwind & App Assets -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Pre-compiled Tailwind & App Assets (with safe fallback) -->
+    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @else
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    @endif
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-800 flex flex-col min-h-screen">
     <!-- Top Bar -->

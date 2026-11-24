@@ -440,18 +440,18 @@
 
 
 <!-- Advanced EV Lithium Battery Section (2W, 3W, 4W) -->
-<div class="bg-gray-50 py-16 sm:py-24 border-t border-gray-200" id="battery">
+<div class="bg-gray-50 py-16 border-t border-gray-200" id="battery">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-14">
-            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-4 shadow-sm">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-sm mb-4 shadow-sm">
                 <span class="flex h-2 w-2 rounded-full bg-[#4CAF50] mr-2"></span>
                 Next-Gen Lithium Power Packs
             </div>
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight font-heading">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
                 EV Lithium <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#27ae60]">Batteries</span> (2W, 3W, 4W)
             </h2>
-            <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Grade-A Lithium Iron Phosphate (LiFePO4) & Lithium-ion battery packs engineered for maximum mileage, thermal safety, fast charging, and 2000+ deep charge cycles.
             </p>
         </div>
@@ -463,7 +463,7 @@
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-full border border-green-100 uppercase tracking-wider">2-Wheeler (2W)</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full border border-green-100 uppercase tracking-wider">2-Wheeler (2W)</span>
                         <span class="text-xs font-semibold text-gray-500">Scooters & Scooty</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">Smart Lithium Pack</h3>
@@ -473,7 +473,7 @@
                 <!-- Product Image -->
                 <div class="h-64 flex items-center justify-center p-4 bg-white relative overflow-hidden">
                     <img src="{{ asset('images/battery-2w-lithium.jpg') }}" alt="2-Wheeler EV Scooter Lithium Cell Battery Pack 60V 72V" class="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
+                    <div style="bottom: 12px; right: 12px;" class="absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
                         18650 / 21700 Cells
                     </div>
                 </div>
@@ -523,7 +523,7 @@
                         </div>
                         <a href="https://wa.me/918808363701?text=Hi%20KB%20Mobility%2C%20I%20am%20interested%20in%202W%20EV%20Scooter%20Lithium%20Battery%20Pack." target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#4CAF50] hover:bg-[#43a047] text-white text-xs font-bold rounded-xl shadow-md transition-all flex items-center">
                             Enquire Now
-                            <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -533,7 +533,7 @@
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full border border-blue-100 uppercase tracking-wider">3-Wheeler (3W)</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full border border-blue-100 uppercase tracking-wider">3-Wheeler (3W)</span>
                         <span class="text-xs font-semibold text-gray-500">E-Rickshaw & Loader</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">Heavy-Duty LiFePO4 Pack</h3>
@@ -543,7 +543,7 @@
                 <!-- Product Image -->
                 <div class="h-64 flex items-center justify-center p-4 bg-white relative overflow-hidden">
                     <img src="{{ asset('images/battery-3w-lithium.jpg') }}" alt="3-Wheeler E-Rickshaw LiFePO4 Cell Battery Pack 48V 60V" class="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
+                    <div style="bottom: 12px; right: 12px;" class="absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
                         Prismatic LiFePO4
                     </div>
                 </div>
@@ -593,7 +593,7 @@
                         </div>
                         <a href="https://wa.me/918808363701?text=Hi%20KB%20Mobility%2C%20I%20am%20interested%20in%203W%20E-Rickshaw%20Lithium%20Battery%20Pack." target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#4CAF50] hover:bg-[#43a047] text-white text-xs font-bold rounded-xl shadow-md transition-all flex items-center">
                             Enquire Now
-                            <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -603,7 +603,7 @@
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full border border-amber-200 uppercase tracking-wider">4-Wheeler (4W)</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-bold rounded-full border border-gray-200 uppercase tracking-wider">4-Wheeler (4W)</span>
                         <span class="text-xs font-semibold text-gray-500">Commercial & Fleet</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">Modular Industrial EV Pack</h3>
@@ -613,7 +613,7 @@
                 <!-- Product Image -->
                 <div class="h-64 flex items-center justify-center p-4 bg-white relative overflow-hidden">
                     <img src="{{ asset('images/battery-4w-lithium.jpg') }}" alt="4-Wheeler Commercial EV Modular Lithium Cell Battery Pack 72V 96V" class="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
+                    <div style="bottom: 12px; right: 12px;" class="absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-200 text-[10px] font-bold text-gray-700 shadow-sm">
                         Modular High-Power
                     </div>
                 </div>
@@ -663,7 +663,7 @@
                         </div>
                         <a href="https://wa.me/918808363701?text=Hi%20KB%20Mobility%2C%20I%20am%20interested%20in%204W%20Commercial%20EV%20Modular%20Lithium%20Battery%20Pack." target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#4CAF50] hover:bg-[#43a047] text-white text-xs font-bold rounded-xl shadow-md transition-all flex items-center">
                             Enquire Now
-                            <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -672,17 +672,17 @@
         </div>
 
         <!-- Exchange / Conversion Callout Banner -->
-        <div class="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-green-100 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center space-x-5">
+        <div class="mt-8 bg-white rounded-2xl p-6 sm:p-8 border border-green-100 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-4">
                 <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-2xl flex items-center justify-center flex-shrink-0 border border-green-100 shadow-sm">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                 </div>
                 <div>
-                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">Switch from Lead-Acid to Lithium — Get Exchange Bonus!</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900">Switch from Lead-Acid to Lithium — Get Exchange Bonus!</h3>
                     <p class="text-sm text-gray-600 mt-1 max-w-2xl">Upgrade your existing 2-wheeler or 3-wheeler to high-efficiency lithium battery. Save electricity, increase speed & get instant exchange value for your old batteries.</p>
                 </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-shrink-0">
+            <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
                 <a href="tel:+918808363701" class="px-6 py-3 bg-[#4CAF50] hover:bg-[#43a047] text-white font-bold text-sm rounded-xl shadow-md text-center transition-colors whitespace-nowrap">
                     Call: +91 8808363701
                 </a>
@@ -699,13 +699,13 @@
 <div class="py-16 bg-white border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
-            <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs tracking-widest uppercase mb-3">
+            <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs tracking-widest uppercase mb-4">
                 <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
                 <span>Our Lineup</span>
                 <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
             </div>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900">Complete Model Range</h2>
-            <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm sm:text-base">Eco-friendly. Low cost. Silent ride. Built for Delhi's roads.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Complete Model Range</h2>
+            <p class="text-gray-500 mt-3 max-w-xl mx-auto text-base">Eco-friendly. Low cost. Silent ride. Built for Delhi's roads.</p>
         </div>
         <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
             <img
@@ -733,26 +733,26 @@
                 <span>Visit Us in Person</span>
                 <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
             </div>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900">Our Delhi Showroom & Fleet</h2>
-            <p class="text-gray-500 mt-2 text-sm sm:text-base max-w-2xl mx-auto">Visit our Uttam Nagar West showroom to test ride our brand-new lineup of high-performance electric scooters.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Our Delhi Showroom & Fleet</h2>
+            <p class="text-gray-500 mt-2 text-base max-w-2xl mx-auto">Visit our Uttam Nagar West showroom to test ride our brand-new lineup of high-performance electric scooters.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-                <img src="{{ asset('images/kb-showroom-1.jpg') }}" alt="KB Mobility EV Scooters Lineup in Showroom" class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <img src="{{ asset('images/kb-showroom-1.jpg') }}" alt="KB Mobility EV Scooters Lineup in Showroom" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.25), transparent);"></div>
                 <div class="absolute bottom-6 left-6 right-6 text-white">
-                    <span class="text-[#4CAF50] text-xs font-bold uppercase tracking-widest bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">Showroom Floor</span>
+                    <span class="text-[#4CAF50] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: rgba(0,0,0,0.5);">Showroom Floor</span>
                     <h3 class="text-xl font-bold mt-2">Ready Inventory of Premium EV Scooters</h3>
                     <p class="text-xs text-gray-300 mt-1">Wide variety of colors and performance options ready for instant delivery.</p>
                 </div>
             </div>
 
             <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-                <img src="{{ asset('images/kb-showroom-2.jpg') }}" alt="KB Mobility Scooter Fleet" class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <img src="{{ asset('images/kb-showroom-2.jpg') }}" alt="KB Mobility Scooter Fleet" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.25), transparent);"></div>
                 <div class="absolute bottom-6 left-6 right-6 text-white">
-                    <span class="text-[#4CAF50] text-xs font-bold uppercase tracking-widest bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">Fleet View</span>
+                    <span class="text-[#4CAF50] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: rgba(0,0,0,0.5);">Fleet View</span>
                     <h3 class="text-xl font-bold mt-2">Electric Scooters Lineup at Uttam Nagar</h3>
                     <p class="text-xs text-gray-300 mt-1">Hastsal Village, Near Hanuman Dharam Kanta, New Delhi - 110059</p>
                 </div>
@@ -771,7 +771,7 @@
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900">Want to book a test drive or explore available models?</h4>
-                    <p class="text-sm text-gray-600">Call us directly at <a href="tel:+918808363701" class="text-[#4CAF50] font-bold hover:underline">+91 8808363701</a> or visit our center.</p>
+                    <p class="text-sm text-gray-600">Call us directly at <a href="tel:+918808363701" class="text-[#4CAF50] font-bold">+91 8808363701</a> or visit our center.</p>
                 </div>
             </div>
             <a href="{{ route('contact') }}" class="px-6 py-3 bg-[#4CAF50] hover:bg-[#43a047] text-white font-bold rounded-xl shadow-md transition-colors whitespace-nowrap">
