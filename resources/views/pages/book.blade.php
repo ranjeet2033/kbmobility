@@ -4,17 +4,18 @@
 @section('meta_description', 'Book an EV service appointment with KB Mobility in Uttam Nagar West, New Delhi. Battery repair, motor service, controller fix & more. Fast response, expert technicians.')
 
 @section('content')
-<div class="relative overflow-hidden bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at center, #75d118 0%, transparent 60%);"></div>
-    <div class="max-w-3xl mx-auto relative z-10 bg-gray-50 p-6 sm:p-10 md:p-12 rounded-2xl border border-gray-100 shadow-xl shadow-gray-200">
+<div class="relative overflow-hidden kb-hero-surface py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="max-w-3xl mx-auto relative z-10 bg-white p-6 sm:p-10 md:p-12 rounded-2xl border border-gray-100 shadow-xl kb-fade-up">
         
-        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3">
-            <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
-            <span>Priority Support</span>
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-4 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
+            Priority Support
         </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
-            Book EV Service
-        </h2>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight font-heading">
+            Book <span class="kb-gradient-text">EV Service</span>
+        </h1>
         <p class="mt-3 text-base sm:text-lg text-gray-600">
             Fill out the form below to schedule a diagnostic or repair session. Our team will contact you shortly to confirm the appointment.
         </p>

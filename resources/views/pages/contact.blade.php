@@ -4,17 +4,26 @@
 @section('meta_description', 'Contact KB Mobility for EV service, spare parts & scooter sales in New Delhi. Visit us at Hastsal Village, Near Hanuman Dharam Kanta, Uttam Nagar West or call +91 8808363701. Open Mon–Sat 9am–7pm.')
 
 @section('content')
-<div class="bg-white py-12 sm:py-16 border-b border-gray-100 relative overflow-hidden">
-    <!-- Abstract Hexagon Background (CSS representation) -->
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at right center, #75d118 0%, transparent 60%);"></div>
-    
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-10">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Contact <span class="text-[#4CAF50]">KB Mobility</span></h1>
-            <p class="mt-3 max-w-2xl text-base sm:text-lg text-gray-600 mx-auto">
-                Whether you need technical support, want to inquire about a new scooter, or need rare spare parts, our team is here to help.
-            </p>
+<!-- Modern Hero Banner Section -->
+<div class="relative kb-hero-surface py-16 border-b border-gray-100 overflow-hidden">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 kb-fade-up">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
+            Showroom &amp; Support Center
         </div>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4 font-heading">
+            Contact <span class="kb-gradient-text">KB Mobility</span>
+        </h1>
+        <p class="mt-3 max-w-2xl text-base md:text-lg text-gray-600 mx-auto leading-relaxed">
+            Whether you need technical support, want to inquire about a new scooter or lithium battery, or need rare spare parts, our team is here to help.
+        </p>
+    </div>
+</div>
+
+<div class="bg-white py-16 border-b border-gray-100 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             <!-- Contact Info -->

@@ -6,28 +6,28 @@
 @section('content')
 
 <!-- Modern Hero Section -->
-<div class="relative bg-gradient-to-b from-gray-50 to-white pt-12 pb-16 sm:pt-16 sm:pb-20 overflow-hidden border-b border-gray-100">
+<div class="relative kb-hero-surface py-16 overflow-hidden border-b border-gray-100">
     <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-purple-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-pink-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
     
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div class="inline-flex items-center px-4 py-2 rounded-full bg-purple-50 border border-purple-100 text-purple-600 font-semibold text-sm mb-6 shadow-sm">
-            <span class="flex h-2 w-2 rounded-full bg-purple-600 mr-2"></span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center kb-fade-up">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
             OEM Certified Quality
         </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 sm:mb-6 font-heading">
-            Genuine <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Spare Parts</span>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+            Genuine <span class="kb-gradient-text">Spare Parts</span>
         </h1>
-        <p class="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
             Keep your electric vehicle running at peak performance. Explore our complete catalog of certified replacement parts with compatibility warranty.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#parts" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3.5 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(147,51,234,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
+            <a href="#parts" class="kb-btn-primary px-8 py-4 rounded-full font-bold text-base flex items-center justify-center">
                 Browse Parts
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
-            <a href="{{ route('book') }}" class="bg-white text-gray-800 hover:text-purple-600 px-8 py-3.5 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
+            <a href="{{ route('book') }}" class="bg-white text-gray-800 hover:text-[#4CAF50] px-8 py-4 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
                 Book Repair
             </a>
         </div>

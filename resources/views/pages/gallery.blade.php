@@ -4,15 +4,21 @@
 @section('meta_description', 'Explore real photos of KB Mobility’s EV showroom, electric scooter lineup, and workshop in Uttam Nagar West, New Delhi. See our state-of-the-art facilities.')
 
 @section('content')
-<div class="relative overflow-hidden bg-white py-12 sm:py-16 border-b border-gray-100">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at top right, #75d118 0%, transparent 60%);"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3">
-            <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
-            <span>Inside KB Mobility</span>
+<!-- Modern Hero Banner Section -->
+<div class="relative kb-hero-surface py-16 overflow-hidden border-b border-gray-100">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 kb-fade-up">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
+            Inside KB Mobility • Uttam Nagar West
         </div>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">Company Gallery</h1>
-        <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto font-sans">Take a peek inside our Uttam Nagar showroom floors, EV scooter fleet lineup, and diagnostic workshops.</p>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 font-heading">
+            Showroom &amp; <span class="kb-gradient-text">Fleet Gallery</span>
+        </h1>
+        <p class="mt-3 text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed">
+            Take a peek inside our Uttam Nagar showroom floors, EV scooter fleet lineup, and diagnostic workshops.
+        </p>
     </div>
 </div>
 

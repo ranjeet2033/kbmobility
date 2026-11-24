@@ -4,15 +4,30 @@
 @section('meta_description', 'Expert EV repair services in Uttam Nagar West, New Delhi – lithium battery diagnostic & repair, BLDC motor service, controller repair, EV charger fix & maintenance by KB Mobility.')
 
 @section('content')
-<div class="relative overflow-hidden bg-white py-12 sm:py-16 border-b border-gray-100">
-    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at center, #75d118 0%, transparent 50%);"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div class="inline-flex items-center space-x-2 text-[#4CAF50] font-bold text-xs uppercase tracking-widest mb-3">
-            <span class="w-8 h-[2px] bg-[#4CAF50]"></span>
-            <span>What We Do</span>
+<!-- Modern Hero Banner Section -->
+<div class="relative kb-hero-surface py-16 overflow-hidden border-b border-gray-100">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 kb-fade-up">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
+            EV Diagnostics &amp; Repair • New Delhi
         </div>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">Our Services</h1>
-        <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive solutions for your electric vehicles. From battery diagnostics to complete overhauls.</p>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+            Our <span class="kb-gradient-text">EV Services</span>
+        </h1>
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Comprehensive solutions for your electric vehicles. From lithium battery diagnostics to BLDC motor &amp; controller overhauls.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{{ route('book') }}" class="kb-btn-primary px-8 py-4 rounded-full font-bold text-base flex items-center justify-center">
+                Book Service Online
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="tel:+918808363701" class="bg-white text-gray-800 hover:text-[#4CAF50] px-8 py-4 rounded-full font-bold text-base border border-gray-200 shadow-sm hover:shadow-md transition-all flex items-center justify-center">
+                Call +91 8808363701
+            </a>
+        </div>
     </div>
 </div>
 

@@ -11,19 +11,19 @@
     <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
     <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full kb-blob-3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-6 shadow-sm">
-            <span class="flex h-2 w-2 rounded-full bg-[#4CAF50] mr-2"></span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center kb-fade-up">
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs mb-6 shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-[#4CAF50] mr-2 kb-dot-ping"></span>
             About KB Mobility • New Delhi
         </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
             Pioneering The <span class="kb-gradient-text">Future of EV</span> in Delhi
         </h1>
-        <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Founded with a vision to build a sustainable, pollution-free future, KB Mobility is New Delhi's trusted hub for electric vehicle sales, diagnostic repair, and OEM spare parts. We are dedicated to keeping your electric drive smooth, efficient, and reliable.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('products') }}" class="bg-gradient-to-r from-[#4CAF50] to-[#27ae60] hover:from-[#43a047] hover:to-[#2ecc71] text-white px-8 py-4 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(76,175,80,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
+            <a href="{{ route('products') }}" class="kb-btn-primary px-8 py-4 rounded-full font-bold text-base flex items-center justify-center">
                 Explore Our Scooters
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
