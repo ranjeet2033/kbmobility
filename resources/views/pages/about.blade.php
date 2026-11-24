@@ -5,11 +5,11 @@
 
 @section('content')
 <!-- Modern Hero Banner Section -->
-<div class="relative bg-gradient-to-b from-gray-50 to-white py-16 overflow-hidden border-b border-gray-100">
+<div class="relative kb-hero-surface py-16 overflow-hidden border-b border-gray-100">
     <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-green-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-emerald-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
-    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full bg-blue-50 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full kb-blob-3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-6 shadow-sm">
@@ -17,7 +17,7 @@
             About KB Mobility • New Delhi
         </div>
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6 font-heading">
-            Pioneering The <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#27ae60]">Future of EV</span> in Delhi
+            Pioneering The <span class="kb-gradient-text">Future of EV</span> in Delhi
         </h1>
         <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Founded with a vision to build a sustainable, pollution-free future, KB Mobility is New Delhi's trusted hub for electric vehicle sales, diagnostic repair, and OEM spare parts. We are dedicated to keeping your electric drive smooth, efficient, and reliable.

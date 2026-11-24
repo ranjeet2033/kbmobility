@@ -20,8 +20,8 @@
     <meta name="description" content="@yield('meta_description', 'KB Mobility - Buy electric scooters, e-rickshaws, 2W/3W/4W lithium batteries & OEM spare parts in New Delhi. Expert EV battery repair, motor & controller service in Uttam Nagar.')">
     <meta name="keywords" content="@yield('meta_keywords', 'electric scooter Delhi, EV repair Uttam Nagar, e-rickshaw Delhi, 2W lithium battery, 3W e-rickshaw lithium battery, 4W EV lithium battery, LiFePO4 battery Delhi, EV battery repair, BLDC motor repair, electric vehicle service, KB Mobility, buy electric scooter New Delhi, EV spare parts 110059')">
     <meta name="author" content="KB Mobility">
-    <meta name="theme-color" content="#4CAF50">
-    <meta name="msapplication-TileColor" content="#4CAF50">
+    <meta name="theme-color" content="#0284C7">
+    <meta name="msapplication-TileColor" content="#0284C7">
 
     <!-- Geo Meta for Local SEO -->
     <meta name="geo.region" content="IN-DL">
@@ -126,10 +126,15 @@
     @else
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     @endif
+
+    <!-- KB Mobility Electric Navy & Cyan-Blue Theme -->
+    <link rel="stylesheet" href="{{ asset('css/kb-theme.css') }}">
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <!-- Top Scroll Progress Bar -->
+    <div id="kb-scroll-progress"></div>
     <!-- Top Bar -->
-    <div class="bg-[#111111] text-gray-300 py-2 text-xs font-medium tracking-wide">
+    <div class="kb-navy-surface text-gray-300 py-2 text-xs font-medium tracking-wide">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <!-- Hidden on mobile, shown on sm+ -->
             <div class="hidden sm:flex items-center">
@@ -242,7 +247,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#111111] text-gray-300 border-t border-gray-800 mt-auto">
+    <footer class="kb-navy-surface text-gray-300 border-t border-gray-800 mt-auto">
 
         <!-- Main Footer Content -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -341,12 +346,61 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/918808363701" target="_blank" rel="noopener noreferrer"
-        class="fixed bottom-6 right-6 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:bg-green-500 transition-all transform hover:scale-110 z-50 flex items-center justify-center"
+        class="fixed bottom-6 right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-green-500 transition-all transform hover:scale-110 z-50 flex items-center justify-center kb-whatsapp-pulse"
         aria-label="Chat on WhatsApp">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.339-.153-.878-.344-1.63-1.092-.931-.931-1.378-1.996-1.558-2.29-.18-.293-.019-.48.163-.661.16-.16.353-.393.528-.592.175-.201.233-.343.349-.572.116-.23.058-.432-.029-.607-.087-.175-.776-1.874-1.063-2.564-.28-.673-.564-.582-.776-.593-.199-.01-.429-.012-.66-.012s-.607.086-.925.433c-.318.347-1.214 1.186-1.214 2.89s1.243 3.348 1.417 3.58c.174.232 2.44 3.731 5.912 5.234.827.359 1.472.573 1.974.733.829.263 1.584.225 2.18.136.666-.101 2.05-.837 2.339-1.646.291-.809.291-1.503.204-1.646-.087-.143-.318-.23-.665-.403z"/>
             <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.48-8.45z"/>
         </svg>
     </a>
+
+    <!-- Scroll Reveal & Stat Counter Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var els = document.querySelectorAll('.kb-reveal');
+            if (!('IntersectionObserver' in window)) {
+                els.forEach(function (el) { el.classList.add('kb-revealed'); });
+            } else {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('kb-revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.08 });
+                els.forEach(function (el) { observer.observe(el); });
+            }
+
+            // Top scroll progress bar
+            var progressBar = document.getElementById('kb-scroll-progress');
+            if (progressBar) {
+                window.addEventListener('scroll', function () {
+                    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+                    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                    progressBar.style.width = pct + '%';
+                }, { passive: true });
+            }
+
+            // Smooth count-up for hero stats
+            document.querySelectorAll('.kb-count').forEach(function (el) {
+                var target = parseInt(el.getAttribute('data-target'), 10);
+                if (!target) return;
+                var current = 0;
+                var steps = 30;
+                var inc = Math.max(1, Math.ceil(target / steps));
+                var timer = setInterval(function () {
+                    current += inc;
+                    if (current >= target) {
+                        el.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        el.textContent = current;
+                    }
+                }, 35);
+            });
+        });
+    </script>
 </body>
 </html>

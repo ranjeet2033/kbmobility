@@ -9,27 +9,27 @@
 @section('content')
 
 <!-- Modern Hero Section -->
-<div class="relative bg-gradient-to-b from-gray-50 to-white pt-10 pb-12 overflow-hidden">
+<div class="relative kb-hero-surface pt-10 pb-12 overflow-hidden">
     <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-green-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-80 w-72 h-72 rounded-full bg-emerald-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
-    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full bg-blue-50 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
+    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full kb-blob-3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <!-- Text Content -->
-            <div class="text-center lg:text-left z-10">
+            <div class="text-center lg:text-left z-10 kb-fade-up">
                 <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-4 shadow-sm">
-                    <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
+                    <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
                     The Future of E-Mobility
                 </div>
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 font-heading">
-                    Ride The <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#27ae60]">Future</span> of Transport
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 font-heading kb-fade-up kb-delay-1">
+                    Ride The <span class="kb-gradient-text">Future</span> of Transport
                 </h1>
-                <p class="text-base sm:text-lg text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                <p class="text-base sm:text-lg text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed kb-fade-up kb-delay-2">
                     Experience zero emissions, unmatched performance, and cutting-edge design. Join the revolution of smart and sustainable commuting today.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start kb-fade-up kb-delay-3">
                     <a href="#shop" class="bg-gradient-to-r from-[#4CAF50] to-[#27ae60] hover:from-[#43a047] hover:to-[#2ecc71] text-white px-8 py-4 rounded-full font-bold text-base shadow-[0_10px_25px_-5px_rgba(76,175,80,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center">
                         Explore Models
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -40,9 +40,9 @@
                 </div>
                 
                 <!-- Quick Stats -->
-                <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-8 pt-6 border-t border-gray-100">
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-8 pt-6 border-t border-gray-100 kb-fade-up kb-delay-3">
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-gray-900">100<span class="text-[#4CAF50]">+</span></div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-gray-900"><span class="kb-count" data-target="100">100</span><span class="text-[#4CAF50]">+</span></div>
                         <div class="text-xs font-medium text-gray-500 mt-0.5 uppercase tracking-wide">Km Range</div>
                     </div>
                     <div>
@@ -50,22 +50,22 @@
                         <div class="text-xs font-medium text-gray-500 mt-0.5 uppercase tracking-wide">CO2 Emissions</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-gray-900">3<span class="text-[#4CAF50]">hr</span></div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-gray-900"><span class="kb-count" data-target="3">3</span><span class="text-[#4CAF50]">hr</span></div>
                         <div class="text-xs font-medium text-gray-500 mt-0.5 uppercase tracking-wide">Fast Charging</div>
                     </div>
                 </div>
             </div>
 
             <!-- Image/Visual -->
-            <div class="relative z-10 flex items-center justify-center mt-6 lg:mt-0">
+            <div class="relative z-10 flex items-center justify-center mt-6 lg:mt-0 kb-fade-up kb-delay-2">
                 <div class="relative w-full max-w-md sm:max-w-lg lg:max-w-xl flex items-center justify-center">
                 <!-- Background decorative circle for image -->
-                <div class="absolute inset-0 bg-gradient-to-tr from-green-100 to-emerald-50 rounded-full scale-75 blur-2xl opacity-60"></div>
+                <div class="absolute inset-0 bg-gradient-to-tr from-green-100 to-emerald-50 rounded-full scale-75 blur-2xl opacity-60 kb-halo-pulse"></div>
                 
-                <img src="{{ asset('images/hero-blue-scooter.png') }}" alt="Modern Electric Scooter" class="relative z-20 w-full max-w-xs sm:max-w-sm lg:max-w-xl object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform duration-700 ease-out">
+                <img src="{{ asset('images/hero-blue-scooter.png') }}" alt="Modern Electric Scooter" class="relative z-20 w-full max-w-xs sm:max-w-sm lg:max-w-xl object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform duration-700 ease-out kb-hero-float">
                 
                 <!-- Floating badges - hidden on mobile to prevent overflow -->
-                <div class="hidden sm:flex absolute top-1/4 -left-6 lg:-left-10 bg-white/95 backdrop-blur-md border border-white shadow-xl rounded-2xl p-3.5 items-center gap-3 z-30 transform hover:-translate-y-1 transition-transform duration-300">
+                <div class="hidden sm:flex absolute top-1/4 -left-6 lg:-left-10 bg-white/95 backdrop-blur-md border border-white shadow-xl rounded-2xl p-3 items-center gap-3 z-30 kb-badge-bob">
                     <div class="bg-green-100 p-2.5 rounded-full text-green-600">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="hidden sm:flex absolute bottom-1/4 -right-4 lg:-right-8 bg-white/95 backdrop-blur-md border border-white shadow-xl rounded-2xl p-3.5 items-center gap-3 z-30 transform hover:-translate-y-1 transition-transform duration-300">
+                <div class="hidden sm:flex absolute bottom-1/4 -right-4 lg:-right-8 bg-white/95 backdrop-blur-md border border-white shadow-xl rounded-2xl p-3 items-center gap-3 z-30 kb-badge-bob-delay">
                     <div class="bg-blue-100 p-2.5 rounded-full text-blue-600">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
@@ -90,32 +90,48 @@
     </div>
 </div>
 
+<!-- Animated EV Highlights Marquee Strip -->
+<div class="kb-navy-surface py-3 overflow-hidden border-y border-gray-800">
+    <div class="kb-marquee-track text-xs sm:text-sm font-bold tracking-wider uppercase text-white flex items-center space-x-10">
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>100+ Km Per Charge</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>2W / 3W / 4W Lithium Batteries</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>3-Hour Fast Charging</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>Expert EV Battery & Controller Repair</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>Uttam Nagar West, New Delhi</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>100+ Km Per Charge</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>2W / 3W / 4W Lithium Batteries</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>3-Hour Fast Charging</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>Expert EV Battery & Controller Repair</span>
+        <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>Uttam Nagar West, New Delhi</span>
+    </div>
+</div>
+
 <!-- Features / Benefits Banner -->
 <div class="bg-white py-16 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white border border-transparent group kb-reveal kb-stagger-1 kb-card-hover">
                 <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-[#4CAF50] mb-5 group-hover:scale-110 group-hover:bg-green-50 transition-all">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h3 class="font-bold text-gray-900 text-lg mb-2">Premium Quality</h3>
                 <p class="text-sm text-gray-500">Built to withstand diverse road conditions.</p>
             </div>
-            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white border border-transparent group kb-reveal kb-stagger-2 kb-card-hover">
                 <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-[#4CAF50] mb-5 group-hover:scale-110 group-hover:bg-green-50 transition-all">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h3 class="font-bold text-gray-900 text-lg mb-2">Cost Effective</h3>
                 <p class="text-sm text-gray-500">Save significantly on daily commute.</p>
             </div>
-            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white border border-transparent group kb-reveal kb-stagger-3 kb-card-hover">
                 <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-[#4CAF50] mb-5 group-hover:scale-110 group-hover:bg-green-50 transition-all">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
                 <h3 class="font-bold text-gray-900 text-lg mb-2">Fast Charging</h3>
                 <p class="text-sm text-gray-500">Reach full charge in under 3 hours.</p>
             </div>
-            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+            <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-gray-50 hover:bg-white border border-transparent group kb-reveal kb-stagger-4 kb-card-hover">
                 <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-[#4CAF50] mb-5 group-hover:scale-110 group-hover:bg-green-50 transition-all">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
@@ -140,7 +156,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Service 1 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Controller Repairing & Periodic E-Vehicle Maintenance</h3>
                 </div>
@@ -150,7 +166,7 @@
             </div>
             
             <!-- Service 2 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Battery Repairing</h3>
                 </div>
@@ -160,7 +176,7 @@
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Motor Repairing</h3>
                 </div>
@@ -170,7 +186,7 @@
             </div>
 
             <!-- Service 4 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Charger Repairing</h3>
                 </div>
@@ -180,7 +196,7 @@
             </div>
 
             <!-- Service 5 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Spare Parts Online Services</h3>
                 </div>
@@ -190,7 +206,7 @@
             </div>
 
             <!-- Service 6 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Battery Selling Services</h3>
                 </div>
@@ -200,7 +216,7 @@
             </div>
 
             <!-- Service 7 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Vehicles Rent Services</h3>
                 </div>
@@ -210,7 +226,7 @@
             </div>
 
             <!-- Service 8 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group kb-reveal kb-card-hover">
                 <div class="p-6 pb-4 flex-grow">
                     <h3 class="text-[15px] font-bold text-gray-900 leading-snug group-hover:text-[#4CAF50] transition-colors h-10">Vehicle Selling Services</h3>
                 </div>
@@ -237,7 +253,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <!-- Product 1 -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group flex flex-col kb-reveal kb-card-hover">
                 <div class="p-6 pb-2">
                     <h3 class="text-xl font-bold text-gray-900">Alpha Model</h3>
                     <p class="text-sm text-gray-500">Premium Series</p>
@@ -270,7 +286,7 @@
             </div>
 
             <!-- Product 2 -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group flex flex-col kb-reveal kb-card-hover">
                 <div class="p-6 pb-2">
                     <h3 class="text-xl font-bold text-gray-900">Single Light</h3>
                     <p class="text-sm text-gray-500">City Commuter</p>
@@ -303,7 +319,7 @@
             </div>
 
             <!-- Product 3 -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group flex flex-col kb-reveal kb-card-hover">
                 <div class="p-6 pb-2">
                     <h3 class="text-xl font-bold text-gray-900">Double Light</h3>
                     <p class="text-sm text-gray-500">Premium Ride</p>
@@ -449,7 +465,7 @@
                 Next-Gen Lithium Power Packs
             </div>
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
-                EV Lithium <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#27ae60]">Batteries</span> (2W, 3W, 4W)
+                EV Lithium <span class="kb-gradient-text">Batteries</span> (2W, 3W, 4W)
             </h2>
             <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Grade-A Lithium Iron Phosphate (LiFePO4) & Lithium-ion battery packs engineered for maximum mileage, thermal safety, fast charging, and 2000+ deep charge cycles.
@@ -460,7 +476,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <!-- Battery 1: 2-Wheeler (2W) -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden kb-reveal kb-card-hover group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
                         <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full border border-green-100 uppercase tracking-wider">2-Wheeler (2W)</span>
@@ -515,6 +531,17 @@
                         </li>
                     </ul>
 
+                    <!-- Live Animated Charge Bar -->
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center text-[10px] font-bold text-gray-500 uppercase mb-1">
+                            <span>Fast Charge Efficiency</span>
+                            <span class="text-[#4CAF50]">98% Active BMS</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div class="kb-charge-bar"></div>
+                        </div>
+                    </div>
+
                     <!-- Warranty & Action -->
                     <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                         <div>
@@ -530,7 +557,7 @@
             </div>
 
             <!-- Battery 2: 3-Wheeler (3W) -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden kb-reveal kb-card-hover group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
                         <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full border border-blue-100 uppercase tracking-wider">3-Wheeler (3W)</span>
@@ -585,6 +612,17 @@
                         </li>
                     </ul>
 
+                    <!-- Live Animated Charge Bar -->
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center text-[10px] font-bold text-gray-500 uppercase mb-1">
+                            <span>Fast Charge Efficiency</span>
+                            <span class="text-[#4CAF50]">98% Active BMS</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div class="kb-charge-bar"></div>
+                        </div>
+                    </div>
+
                     <!-- Warranty & Action -->
                     <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                         <div>
@@ -600,7 +638,7 @@
             </div>
 
             <!-- Battery 3: 4-Wheeler (4W) -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden kb-reveal kb-card-hover group flex flex-col">
                 <div class="p-6 pb-2">
                     <div class="flex items-center justify-between mb-2">
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-bold rounded-full border border-gray-200 uppercase tracking-wider">4-Wheeler (4W)</span>
@@ -655,6 +693,17 @@
                         </li>
                     </ul>
 
+                    <!-- Live Animated Charge Bar -->
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center text-[10px] font-bold text-gray-500 uppercase mb-1">
+                            <span>Fast Charge Efficiency</span>
+                            <span class="text-[#4CAF50]">98% Active BMS</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div class="kb-charge-bar"></div>
+                        </div>
+                    </div>
+
                     <!-- Warranty & Action -->
                     <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                         <div>
@@ -672,7 +721,7 @@
         </div>
 
         <!-- Exchange / Conversion Callout Banner -->
-        <div class="mt-8 bg-white rounded-2xl p-6 sm:p-8 border border-green-100 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="mt-8 bg-white rounded-2xl p-6 sm:p-8 border border-green-100 shadow-md flex flex-col md:flex-row items-center justify-between gap-6 kb-reveal kb-card-hover">
             <div class="flex items-center space-x-4">
                 <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-2xl flex items-center justify-center flex-shrink-0 border border-green-100 shadow-sm">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
@@ -707,7 +756,7 @@
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Complete Model Range</h2>
             <p class="text-gray-500 mt-3 max-w-xl mx-auto text-base">Eco-friendly. Low cost. Silent ride. Built for Delhi's roads.</p>
         </div>
-        <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
+        <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50 kb-reveal kb-card-hover">
             <img
                 src="{{ asset('images/product-catalog.jpg') }}"
                 alt="KB Mobility Product Catalog - Alpha Model, Single Light, Double Light, City Commuter"
@@ -738,7 +787,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+            <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100 kb-reveal kb-card-hover">
                 <img src="{{ asset('images/kb-showroom-1.jpg') }}" alt="KB Mobility EV Scooters Lineup in Showroom" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.25), transparent);"></div>
                 <div class="absolute bottom-6 left-6 right-6 text-white">
@@ -748,7 +797,7 @@
                 </div>
             </div>
 
-            <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+            <div class="relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100 kb-reveal kb-card-hover">
                 <img src="{{ asset('images/kb-showroom-2.jpg') }}" alt="KB Mobility Scooter Fleet" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.25), transparent);"></div>
                 <div class="absolute bottom-6 left-6 right-6 text-white">
