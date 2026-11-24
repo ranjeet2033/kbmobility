@@ -10,19 +10,18 @@
     --kb-sky-border: #bae6fd;
 }
 
-/* Primary & Gradient Buttons with Auto-Shimmer + Hover Lift */
+/* Primary Minimalist Button */
 .kb-btn-primary {
     position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 55%, #06b6d4 100%);
+    background: #0284c7;
     color: #ffffff !important;
-    box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.42);
-    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px -2px rgba(2, 132, 199, 0.25);
+    transition: all 0.22s ease;
 }
 .kb-btn-primary:hover {
-    background: linear-gradient(135deg, #0369a1 0%, #0284c7 60%, #0891b2 100%);
-    box-shadow: 0 14px 30px -5px rgba(2, 132, 199, 0.55);
-    transform: translateY(-3px) scale(1.02);
+    background: #0369a1;
+    box-shadow: 0 8px 20px -4px rgba(2, 132, 199, 0.35);
+    transform: translateY(-2px);
 }
 
 /* Top Bar & Footer in Deep Midnight Navy */
@@ -31,34 +30,21 @@
     color: #cbd5e1;
 }
 
-/* Hero Ambient Background & Blobs */
+/* Minimalist Clean Hero Surface */
 .kb-hero-surface {
-    background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 45%, #ffffff 100%) !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
 }
-.kb-blob-1 {
-    background-color: #7dd3fc !important;
-}
-.kb-blob-2 {
-    background-color: #67e8f9 !important;
-}
+.kb-blob-1,
+.kb-blob-2,
 .kb-blob-3 {
-    background-color: #93c5fd !important;
+    display: none !important;
 }
 
-/* Animated Shifting Gradient Headline */
-@keyframes kb-gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
+/* Clean Minimalist Accent Headline */
 .kb-gradient-text {
-    background: linear-gradient(90deg, #0284c7, #06b6d4, #2563eb, #0284c7);
-    background-size: 250% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: kb-gradient-shift 4s linear infinite;
+    color: #0284c7 !important;
+    background: none !important;
+    -webkit-text-fill-color: #0284c7 !important;
 }
 
 /* Theme Override Utilities so all subpages match Electric Navy & Cyan-Blue */
@@ -127,43 +113,19 @@
 .bg-gradient-to-r.from-\[\#4CAF50\].to-\[\#27ae60\]:not(.bg-clip-text),
 .bg-gradient-to-r.from-\[\#2ecc71\].to-\[\#27ae60\]:not(.bg-clip-text) {
     position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 55%, #06b6d4 100%) !important;
-    box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.38) !important;
+    background: #0284c7 !important;
+    box-shadow: 0 4px 14px -2px rgba(2, 132, 199, 0.25) !important;
 }
 
 .bg-clip-text.bg-gradient-to-r.from-\[\#4CAF50\].to-\[\#27ae60\] {
-    background: linear-gradient(90deg, #0284c7, #06b6d4, #2563eb, #0284c7) !important;
-    background-size: 250% auto !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
-    animation: kb-gradient-shift 4s linear infinite;
-}
-
-@keyframes kb-btn-shine {
-    0% { left: -120%; }
-    35%, 100% { left: 150%; }
-}
-
-.bg-gradient-to-r.from-\[\#4CAF50\].to-\[\#27ae60\]:not(.bg-clip-text)::after,
-.bg-gradient-to-r.from-\[\#2ecc71\].to-\[\#27ae60\]:not(.bg-clip-text)::after,
-.kb-btn-primary::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 55%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-    transform: skewX(-20deg);
-    animation: kb-btn-shine 3.6s ease-in-out infinite;
+    color: #0284c7 !important;
+    background: none !important;
+    -webkit-text-fill-color: #0284c7 !important;
 }
 
 .bg-gradient-to-r.from-\[\#4CAF50\].to-\[\#27ae60\]:not(.bg-clip-text):hover,
 .bg-gradient-to-r.from-\[\#2ecc71\].to-\[\#27ae60\]:not(.bg-clip-text):hover {
-    background: linear-gradient(135deg, #0369a1 0%, #0284c7 60%, #0891b2 100%) !important;
+    background: #0369a1 !important;
 }
 
 /* Navbar active pill */

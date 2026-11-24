@@ -8,19 +8,14 @@
 
 @section('content')
 
-<!-- Modern Hero Section -->
-<div class="relative kb-hero-surface pt-10 pb-12 overflow-hidden">
-    <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full kb-blob-1 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-80 w-72 h-72 rounded-full kb-blob-2 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 2s;"></div>
-    <div class="absolute -bottom-8 left-20 w-72 h-72 rounded-full kb-blob-3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style="animation-delay: 4s;"></div>
-
+<!-- Modern Minimalist Hero Section -->
+<div class="relative kb-hero-surface pt-10 pb-12 overflow-hidden border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <!-- Text Content -->
             <div class="text-center lg:text-left z-10 kb-fade-up">
-                <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-600 font-semibold text-xs sm:text-sm mb-4 shadow-sm">
-                    <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2 kb-dot-ping"></span>
+                <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 font-semibold text-xs mb-4 shadow-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
                     The Future of E-Mobility
                 </div>
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-4 font-heading kb-fade-up kb-delay-1">
@@ -59,13 +54,10 @@
             <!-- Image/Visual -->
             <div class="relative z-10 flex items-center justify-center mt-6 lg:mt-0 kb-fade-up kb-delay-2">
                 <div class="relative w-full max-w-md sm:max-w-lg lg:max-w-xl flex items-center justify-center">
-                <!-- Background decorative circle for image -->
-                <div class="absolute inset-0 bg-gradient-to-tr from-green-100 to-emerald-50 rounded-full scale-75 blur-2xl opacity-60 kb-halo-pulse"></div>
-                
-                <img src="{{ asset('images/hero-blue-scooter.png') }}" alt="Modern Electric Scooter" class="relative z-20 w-full max-w-xs sm:max-w-sm lg:max-w-xl object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform duration-700 ease-out kb-hero-float">
+                <img src="{{ asset('images/hero-blue-scooter.png') }}" alt="Modern Electric Scooter" class="relative z-20 w-full max-w-xs sm:max-w-sm lg:max-w-xl object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.16)] hover:scale-105 transition-transform duration-700 ease-out kb-hero-float">
                 
                 <!-- Floating badges - hidden on mobile to prevent overflow -->
-                <div class="hidden sm:flex absolute top-1/4 -left-6 lg:-left-10 bg-white/95 backdrop-blur-md border border-white shadow-xl rounded-2xl p-3 items-center gap-3 z-30 kb-badge-bob">
+                <div class="hidden sm:flex absolute top-1/4 -left-6 lg:-left-10 bg-white border border-gray-100 shadow-lg rounded-2xl p-3 items-center gap-3 z-30 kb-badge-bob">
                     <div class="bg-green-100 p-2.5 rounded-full text-green-600">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
