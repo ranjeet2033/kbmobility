@@ -165,7 +165,7 @@
             <!-- Logo Center (Larger Logo with Brand Name underneath) -->
             <div class="col-span-3 md:col-span-1 flex justify-center">
                 <a href="{{ route('home') }}" class="flex flex-col items-center text-center group py-1">
-                    <img src="{{ asset('images/kb-symbol.png') }}" alt="KB Mobility Logo" class="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm">
+                    <img src="{{ asset('images/kb-symbol.png') }}" alt="KB Mobility Logo" class="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 ">
                     <span class="text-gray-900 tracking-tight text-2xl sm:text-3xl font-extrabold font-heading mt-1 leading-none">KB <span class="text-[#4CAF50]">Mobility</span></span>
                     <span class="text-[10px] text-gray-500 font-semibold tracking-widest uppercase mt-0.5">Electric Mobility Solutions</span>
                 </a>
