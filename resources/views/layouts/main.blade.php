@@ -128,7 +128,7 @@
     @endif
 
     <!-- KB Mobility Electric Navy & Cyan-Blue Theme -->
-    <link rel="stylesheet" href="{{ asset('css/kb-theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/kb-theme.css') }}?v={{ filemtime(public_path('css/kb-theme.css')) }}">
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
     <!-- Top Scroll Progress Bar -->
