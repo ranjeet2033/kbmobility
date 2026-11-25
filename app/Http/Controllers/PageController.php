@@ -12,6 +12,7 @@ class PageController extends Controller
     public function contact() { return view('pages.contact'); }
     public function book() { return view('pages.book'); }
     public function products() { return view('pages.products'); }
+    public function batteries() { return view('pages.batteries'); }
     public function erickshaw() { return view('pages.erickshaw'); }
     public function accessories() { return view('pages.accessories'); }
     public function gallery() { return view('pages.gallery'); }

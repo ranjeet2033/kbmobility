@@ -210,15 +210,15 @@
 
             <!-- Desktop Nav Bar -->
             <div class="hidden md:flex justify-center h-14 items-center">
-                <div class="flex space-x-1 items-center font-medium text-[15px]">
-                    <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">Home</a>
-                    <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">Products</a>
-                    <a href="{{ route('home') }}#battery" class="text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50 px-4 py-2 rounded-md transition-colors">Batteries</a>
-                    <a href="{{ route('erickshaw') }}" class="{{ request()->routeIs('erickshaw') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">E-Rickshaw</a>
-                    <a href="{{ route('accessories') }}" class="{{ request()->routeIs('accessories') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">Accessories</a>
-                    <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">Gallery</a>
-                    <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">About Us</a>
-                    <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-4 py-2 rounded-md transition-colors">Contact Us</a>
+                <div class="flex space-x-1 items-center font-medium text-sm lg:text-[15px] whitespace-nowrap">
+                    <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Home</a>
+                    <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Services</a>
+                    <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Products</a>
+                    <a href="{{ route('batteries') }}" class="{{ request()->routeIs('batteries') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Batteries</a>
+                    <a href="{{ route('accessories') }}" class="{{ request()->routeIs('accessories') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">2W &amp; 3W Accessories</a>
+                    <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Gallery</a>
+                    <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">About Us</a>
+                    <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -227,10 +227,10 @@
         <div x-show="mobileMenuOpen" x-collapse x-cloak style="display: none;" class="md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1 sm:px-3 flex flex-col">
                 <a href="{{ route('home') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Home</a>
+                <a href="{{ route('services') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Services</a>
                 <a href="{{ route('products') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Products</a>
-                <a href="{{ route('home') }}#battery" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Lithium Batteries</a>
-                <a href="{{ route('erickshaw') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">E-Rickshaw</a>
-                <a href="{{ route('accessories') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Accessories</a>
+                <a href="{{ route('batteries') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Batteries</a>
+                <a href="{{ route('accessories') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">2W &amp; 3W Accessories</a>
                 <a href="{{ route('gallery') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Gallery</a>
                 <a href="{{ route('about') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">About Us</a>
                 <a href="{{ route('contact') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Contact Us</a>
@@ -282,10 +282,11 @@
                     <h3 class="text-white font-bold text-sm uppercase tracking-widest mb-6">Quick Links</h3>
                     <ul class="space-y-3 text-sm">
                         <li><a href="{{ route('home') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Home</a></li>
-                        <li><a href="{{ route('products') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>EV Scooters</a></li>
-                        <li><a href="{{ route('erickshaw') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>E-Rickshaws</a></li>
-                        <li><a href="{{ route('accessories') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Spare Parts</a></li>
                         <li><a href="{{ route('services') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Services</a></li>
+                        <li><a href="{{ route('products') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Products</a></li>
+                        <li><a href="{{ route('batteries') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Batteries</a></li>
+                        <li><a href="{{ route('erickshaw') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>E-Rickshaws</a></li>
+                        <li><a href="{{ route('accessories') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>2W &amp; 3W Accessories</a></li>
                         <li><a href="{{ route('gallery') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>Gallery</a></li>
                         <li><a href="{{ route('about') }}" class="text-gray-500 hover:text-[#4CAF50] transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-[#4CAF50] mr-2 opacity-70"></span>About Us</a></li>
                     </ul>

@@ -58,10 +58,18 @@
                 <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
                 <div class="mt-1">
                     <select id="service" name="service" required class="py-3 px-4 block w-full bg-green-50 text-gray-900 border border-gray-200 rounded-md shadow-sm focus:ring-[#4CAF50] focus:border-[#4CAF50] transition-colors">
-                        <option value="Battery Repair" {{ request('service') == 'Battery Repair' ? 'selected' : '' }}>Battery Repair & Diagnostic</option>
+                        <option value="Battery Repair" {{ request('service') == 'Battery Repair' ? 'selected' : '' }}>Battery Repair &amp; Diagnostic</option>
+                        <option value="2W Battery Repairing" {{ request('service') == '2W Battery Repairing' ? 'selected' : '' }}>2W Battery Repairing</option>
+                        <option value="3W E-Rickshaw Battery Repair" {{ request('service') == '3W E-Rickshaw Battery Repair' ? 'selected' : '' }}>3W (E-Rickshaw) Battery Repair</option>
+                        <option value="4W Battery Repair" {{ request('service') == '4W Battery Repair' ? 'selected' : '' }}>4W Battery Repair</option>
+                        <option value="IP57 Charger Repair" {{ request('service') == 'IP57 Charger Repair' ? 'selected' : '' }}>IP57 Charger Repairing</option>
+                        <option value="IP67 Charger Repair" {{ request('service') == 'IP67 Charger Repair' ? 'selected' : '' }}>IP67 Charger Repairing</option>
+                        <option value="IP65 Charger Repair" {{ request('service') == 'IP65 Charger Repair' ? 'selected' : '' }}>IP65 Charger Repairing</option>
+                        <option value="Controller Repair" {{ request('service') == 'Controller Repair' ? 'selected' : '' }}>Controller Repair (Chinese IP57 / Branded IP65)</option>
+                        <option value="Motor Repair" {{ request('service') == 'Motor Repair' ? 'selected' : '' }}>Motor Repair (Chinese / Branded Vehicles)</option>
                         <option value="Controller/Charger Repair" {{ request('service') == 'Controller/Charger Repair' ? 'selected' : '' }}>Controller or Charger Repair</option>
                         <option value="General Service" {{ request('service') == 'General Service' ? 'selected' : '' }}>General EV Service</option>
-                        <option value="Parts/Sales Inquiry" {{ request('service') == 'Parts/Sales Inquiry' ? 'selected' : '' }}>Spare Parts / Sales Inquiry</option>
+                        <option value="Parts/Sales Inquiry" {{ request('service') == 'Parts/Sales Inquiry' ? 'selected' : '' }}>2W &amp; 3W Spare Parts / Sales Inquiry</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>

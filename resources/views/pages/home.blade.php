@@ -227,6 +227,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-10 text-center">
+            <a href="{{ route('services') }}" class="inline-flex items-center px-7 py-3.5 bg-[#4CAF50] hover:bg-[#43a047] text-white font-bold text-sm rounded-full shadow-md transition-all">
+                Explore All Repair Services (Battery, Charger, Controller &amp; Motor)
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -270,9 +277,9 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 85,000</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -303,9 +310,9 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 65,000</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -336,12 +343,21 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 72,500</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="{{ route('products') }}" class="inline-flex items-center px-7 py-3.5 bg-gray-900 hover:bg-[#4CAF50] text-white font-bold text-sm rounded-full shadow-md transition-all">
+                View All 2W Models (Activa, Old, BMW, TVS iQube), 3W &amp; Chargers
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
 
             <!-- Product 4 -->
             <!-- <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
@@ -369,9 +385,9 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 85,000</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div> -->
@@ -402,9 +418,9 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 65,000</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div> -->
@@ -435,12 +451,21 @@
                     </div>
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                         <span class="text-lg font-bold text-gray-900">₹ 72,500</span>
-                        <button class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
+                        <a href="{{ route('products') }}#vehicles-2w" class="text-sm font-semibold text-[#4CAF50] hover:text-[#27ae60] transition-colors flex items-center">
                             View Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
-            </div> -->
+            </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="{{ route('products') }}" class="inline-flex items-center px-7 py-3.5 bg-gray-900 hover:bg-[#4CAF50] text-white font-bold text-sm rounded-full shadow-md transition-all">
+                View All 2W Models (Activa, Old, BMW, TVS iQube), 3W &amp; Chargers
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div> -->
 
         </div>
     </div>
@@ -710,6 +735,34 @@
                 </div>
             </div>
 
+        </div>
+
+        <!-- Additional Battery Solutions: Solar Inverter, Inverter & UPS -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 kb-reveal">
+            <a href="{{ route('batteries') }}" class="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#4CAF50] shadow-sm flex items-center gap-4 transition-all group">
+                <img src="{{ asset('images/battery-solar-inverter.jpg') }}" alt="Solar Inverter Battery" class="w-20 h-20 object-contain rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform" loading="lazy">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-amber-600">Solar Storage</span>
+                    <h3 class="font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">Solar Inverter Battery</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">12V / 24V / 48V deep-cycle solar storage</p>
+                </div>
+            </a>
+            <a href="{{ route('batteries') }}" class="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#4CAF50] shadow-sm flex items-center gap-4 transition-all group">
+                <img src="{{ asset('images/battery-inverter.jpg') }}" alt="Inverter Battery" class="w-20 h-20 object-contain rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform" loading="lazy">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-teal-600">Home &amp; Shop</span>
+                    <h3 class="font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">Inverter Battery</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">Long-backup 100Ah–150Ah power packs</p>
+                </div>
+            </a>
+            <a href="{{ route('batteries') }}" class="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#4CAF50] shadow-sm flex items-center gap-4 transition-all group">
+                <img src="{{ asset('images/battery-ups.jpg') }}" alt="UPS Battery" class="w-20 h-20 object-contain rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform" loading="lazy">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-600">IT &amp; Commercial</span>
+                    <h3 class="font-bold text-gray-900 group-hover:text-[#4CAF50] transition-colors">UPS Battery</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">High-rate instant backup modules</p>
+                </div>
+            </a>
         </div>
 
         <!-- Exchange / Conversion Callout Banner -->

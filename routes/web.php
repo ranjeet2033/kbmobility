@@ -11,6 +11,7 @@ Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/book', [PageController::class, 'book'])->name('book');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/products', [PageController::class, 'products'])->name('products');
+Route::get('/batteries', [PageController::class, 'batteries'])->name('batteries');
 Route::get('/e-rickshaw', [PageController::class, 'erickshaw'])->name('erickshaw');
 Route::get('/accessories', [PageController::class, 'accessories'])->name('accessories');
 Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');

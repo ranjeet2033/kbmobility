@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', 'EV Repair Services in Uttam Nagar, New Delhi – Battery, Motor & Controller | KB Mobility')
-@section('meta_description', 'Expert EV repair services in Uttam Nagar West, New Delhi – lithium battery diagnostic & repair, BLDC motor service, controller repair, EV charger fix & maintenance by KB Mobility.')
+@section('title', 'EV Repair Services – Battery, Charger, Controller & Motor | KB Mobility')
+@section('meta_description', 'Expert EV repair services in Uttam Nagar West, New Delhi: 2W/3W/4W Battery Repair, IP57/IP67/IP65 Charger Repair, Chinese & Branded Controller Repair, and Motor Repair.')
 
 @section('content')
 <!-- Modern Hero Banner Section -->
@@ -17,7 +17,7 @@
             Our <span class="kb-gradient-text">EV Services</span>
         </h1>
         <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Comprehensive solutions for your electric vehicles. From lithium battery diagnostics to BLDC motor &amp; controller overhauls.
+            Specialized repair and diagnostics for Battery Packs (2W, 3W, 4W), IP57/IP67/IP65 Chargers, Controllers, and Motors for both Chinese &amp; Branded EVs.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('book') }}" class="kb-btn-primary px-8 py-4 rounded-full font-bold text-base flex items-center justify-center">
@@ -31,96 +31,190 @@
     </div>
 </div>
 
-<div class="py-12 sm:py-16 bg-white">
+<!-- 1. Battery Repair Section (2W, 3W E-Rickshaw, 4W with Photo & Videos) -->
+<div class="py-12 sm:py-16 bg-white" id="battery-repair">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Service Detailed 1 -->
-            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors group">
-                <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-xl flex items-center justify-center mb-6 border border-gray-100 group-hover:bg-[#4CAF50] group-hover:text-black transition-colors">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <div class="text-center mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#4CAF50]">Cell Balancing &amp; BMS Repair</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">Battery Repair</h2>
+            <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Complete lithium &amp; LiFePO4 battery diagnostics, weak cell replacement, and BMS repair with workshop photo &amp; video documentation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 2W Battery Repairing -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:border-[#4CAF50]/50 transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/battery-2w-lithium.jpg') }}" alt="2W Battery Repairing" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-green-50 text-[#4CAF50] text-[11px] font-bold rounded-full border border-green-100">Photos &amp; Videos</span>
                 </div>
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Battery Repair & Diagnostics</h2>
-                <p class="text-gray-600 mb-6 leading-relaxed">We specialize in Lithium-ion battery packs. Our advanced diagnostic tools identify weak cells, allowing us to repair rather than replace the entire unit. We balance packs, replace BMS, and enhance range.</p>
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Cell level balancing</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> BMS replacement</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Capacity testing</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom battery pack building</li>
-                </ul>
-                <div class="mt-auto">
-                    <a href="{{ route('book', ['service' => 'Battery Repair']) }}" class="inline-flex items-center text-gray-900 hover:text-[#4CAF50] transition-colors text-sm font-bold uppercase tracking-widest border-b-2 border-transparent hover:border-[#4CAF50] pb-1">
-                        Book this service <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">2W Battery Repairing</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Cell-level balancing, BMS replacement, and range restoration for 48V, 60V &amp; 72V electric scooter battery packs.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => '2W Battery Repairing']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Service Detailed 2 -->
-            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors group">
-                <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-xl flex items-center justify-center mb-6 border border-gray-100 group-hover:bg-[#4CAF50] group-hover:text-black transition-colors">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
+            <!-- 3W (E-Rickshaw) Battery Repair -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:border-[#4CAF50]/50 transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/battery-3w-lithium.jpg') }}" alt="3W E-Rickshaw Battery Repair" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-blue-50 text-blue-600 text-[11px] font-bold rounded-full border border-blue-100">Photos &amp; Videos</span>
                 </div>
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Controller & Charger Repair</h2>
-                <p class="text-gray-600 mb-6 leading-relaxed">The brain of your EV. We diagnose and repair motor controllers and intelligent chargers. From blown MOSFETs to firmware issues, we handle the complex circuitry.</p>
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> MOSFET replacement</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Throttle sensor issues</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Wiring harness repair</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Charger fuse replacement</li>
-                </ul>
-                <div class="mt-auto">
-                    <a href="{{ route('book', ['service' => 'Controller/Charger Repair']) }}" class="inline-flex items-center text-gray-900 hover:text-[#4CAF50] transition-colors text-sm font-bold uppercase tracking-widest border-b-2 border-transparent hover:border-[#4CAF50] pb-1">
-                        Book this service <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">3W (E-Rickshaw) Battery Repair</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Heavy-duty LiFePO4 prismatic cell testing, terminal overhaul, and high-current BMS repair for passenger &amp; cargo e-rickshaws.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => '3W E-Rickshaw Battery Repair']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Service Detailed 3 -->
-            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors group">
-                <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-xl flex items-center justify-center mb-6 border border-gray-100 group-hover:bg-[#4CAF50] group-hover:text-black transition-colors">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <!-- 4W Battery Repair -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:border-[#4CAF50]/50 transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/battery-4w-lithium.jpg') }}" alt="4W Battery Repair" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-purple-50 text-purple-600 text-[11px] font-bold rounded-full border border-purple-100">Photos &amp; Videos</span>
                 </div>
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Sales: Scooters & E-rickshaws</h2>
-                <p class="text-gray-600 mb-6 leading-relaxed">We are an authorized dealer for premium EV brands. Explore our catalog of reliable e-scooters and high-capacity e-rickshaws designed for the modern commute.</p>
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> High-speed scooters</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Commercial e-rickshaws</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Test drives available</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Competitive finance options</li>
-                </ul>
-                <div class="mt-auto">
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-gray-900 hover:text-[#4CAF50] transition-colors text-sm font-bold uppercase tracking-widest border-b-2 border-transparent hover:border-[#4CAF50] pb-1">
-                        Contact Sales <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Detailed 4 -->
-            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors group">
-                <div class="w-14 h-14 bg-green-50 text-[#4CAF50] rounded-xl flex items-center justify-center mb-6 border border-gray-100 group-hover:bg-[#4CAF50] group-hover:text-black transition-colors">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
-                </div>
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Spare Parts & Accessories</h2>
-                <p class="text-gray-600 mb-6 leading-relaxed">Looking for quality replacements? We stock genuine motors, tires, body parts, and accessories for major EV brands.</p>
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> BLDC Motors</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Throttles & levers</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Tubeless tires</li>
-                    <li class="flex items-start text-gray-600"><svg class="w-5 h-5 text-[#4CAF50] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom lighting</li>
-                </ul>
-                <div class="mt-auto">
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-gray-900 hover:text-[#4CAF50] transition-colors text-sm font-bold uppercase tracking-widest border-b-2 border-transparent hover:border-[#4CAF50] pb-1">
-                        Inquire Parts <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">4W Battery Repair</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Modular 72V/96V commercial EV battery diagnostics, CAN-Bus BMS troubleshooting, and thermal pack servicing.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => '4W Battery Repair']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- 2. Charger Repairing Section (IP57, IP67, IP65 with Photo & Videos) -->
+<div class="py-12 sm:py-16 bg-gray-50 border-t border-gray-100" id="charger-repair">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Chip-Level Electronics</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">Charger Repairing</h2>
+            <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Expert MOSFET, IC, transformer, and cooling fan repairs for IP57, IP67, and IP65 EV chargers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- IP57 Charger Repair -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/charger-ip57.jpg') }}" alt="IP57 Charger Repairing" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-green-50 text-[#4CAF50] text-[11px] font-bold rounded-full border border-green-100">Photos &amp; Videos</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">IP57 Charger Repairing</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">48V / 60V / 72V (6A–25A) IP57 charger repair: voltage calibration, cutoff circuit fix, and connector replacement.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => 'IP57 Charger Repair']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IP67 Charger Repair -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/service-charger.png') }}" alt="IP67 Charger Repairing" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-blue-50 text-blue-600 text-[11px] font-bold rounded-full border border-blue-100">Photos &amp; Videos</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">IP67 Charger Repairing</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Waterproof potted IP67 charger diagnostics, high-ampere power stage repair, and thermal seal restoration.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => 'IP67 Charger Repair']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IP65 Charger Repair -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                <div class="relative h-52 bg-white p-4 flex items-center justify-center">
+                    <img src="{{ asset('images/charger-ip65.jpg') }}" alt="IP65 Charger Repairing" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-bold rounded-full border border-indigo-100">Photos &amp; Videos</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">IP65 Charger Repairing</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Sealed industrial IP65 charger repair including display module, relay, and surge protection restoration.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <a href="{{ route('gallery') }}" class="text-xs font-bold text-gray-600 hover:text-[#4CAF50] uppercase tracking-wider">View Photos &amp; Videos</a>
+                        <a href="{{ route('book', ['service' => 'IP65 Charger Repair']) }}" class="text-xs font-bold text-[#4CAF50] hover:underline uppercase tracking-wider">Book Repair →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3. Controller Repair & 4. Motor Repair Section -->
+<div class="py-12 sm:py-16 bg-white border-t border-gray-100" id="controller-motor">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Controller Repair -->
+            <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors flex flex-col">
+                <div class="h-52 bg-white rounded-2xl p-4 mb-6 flex items-center justify-center">
+                    <img src="{{ asset('images/service-controller-repair.jpg') }}" alt="Controller Repair Chinese IP57 and Branded IP65" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                </div>
+                <h2 class="text-2xl font-extrabold text-gray-900 mb-3">Controller Repair</h2>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">Complete BLDC &amp; sine-wave controller diagnostics, MOSFET replacement, hall-sensor circuit repair, and throttle calibration.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <div class="text-xs font-bold uppercase text-blue-600 mb-1">Type 1</div>
+                        <div class="font-bold text-gray-900">Chinese (IP57)</div>
+                        <p class="text-xs text-gray-500 mt-1">Universal 48V/60V/72V Chinese scooter &amp; e-rickshaw controllers.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <div class="text-xs font-bold uppercase text-[#4CAF50] mb-1">Type 2</div>
+                        <div class="font-bold text-gray-900">IP65 (Branded Vehicle)</div>
+                        <p class="text-xs text-gray-500 mt-1">Sealed OEM controllers for branded 2W &amp; 3W electric vehicles.</p>
+                    </div>
+                </div>
+                <a href="{{ route('book', ['service' => 'Controller Repair']) }}" class="mt-auto inline-flex items-center text-gray-900 hover:text-[#4CAF50] font-bold text-sm uppercase tracking-wider">
+                    Book Controller Repair <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Motor Repair -->
+            <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:border-[#4CAF50]/50 transition-colors flex flex-col">
+                <div class="h-52 bg-white rounded-2xl p-4 mb-6 flex items-center justify-center">
+                    <img src="{{ asset('images/service-motor.png') }}" alt="EV Motor Repair Chinese and Branded Vehicles" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
+                </div>
+                <h2 class="text-2xl font-extrabold text-gray-900 mb-3">Motor Repair</h2>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">Hub motor and mid-drive BLDC motor rewinding, hall sensor replacement, bearing overhaul, and waterproofing.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <div class="text-xs font-bold uppercase text-blue-600 mb-1">Category 1</div>
+                        <div class="font-bold text-gray-900">Chinese Vehicles</div>
+                        <p class="text-xs text-gray-500 mt-1">10" &amp; 12" hub motors and 3W e-rickshaw traction motors.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <div class="text-xs font-bold uppercase text-[#4CAF50] mb-1">Category 2</div>
+                        <div class="font-bold text-gray-900">Branded Vehicles</div>
+                        <p class="text-xs text-gray-500 mt-1">Precision hall-sensor &amp; winding service for branded EVs.</p>
+                    </div>
+                </div>
+                <a href="{{ route('book', ['service' => 'Motor Repair']) }}" class="mt-auto inline-flex items-center text-gray-900 hover:text-[#4CAF50] font-bold text-sm uppercase tracking-wider">
+                    Book Motor Repair <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <div class="bg-green-50 py-16 text-center border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6 tracking-tight">Need a custom service not listed here?</h2>
-        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold uppercase tracking-wider rounded-md text-black bg-[#4CAF50] hover:bg-[#43a047] transition-colors shadow-[0_0_20px_rgba(117,209,24,0.3)]">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 tracking-tight">Need a custom service not listed here?</h2>
+        <p class="text-gray-600 mb-6 max-w-xl mx-auto">Visit our Uttam Nagar West workshop or book an appointment online.</p>
+        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold uppercase tracking-wider rounded-md text-white bg-[#4CAF50] hover:bg-[#43a047] transition-colors shadow-md">
             Get in touch with us
         </a>
     </div>
