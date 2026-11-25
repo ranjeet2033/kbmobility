@@ -47,7 +47,7 @@
                 <div class="h-64 bg-white p-6 flex items-center justify-center border-b border-gray-100">
                     <img src="{{ asset('images/parts-2w-spares.jpg') }}" alt="2W Spare Parts List" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
                 </div>
-                <div class="p-8 flex flex-col flex-grow">
+                <div class="p-5 sm:p-8 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-2xl font-extrabold text-gray-900">2W Spare Parts</h3>
                         <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase">Electric Scooters</span>
@@ -76,7 +76,7 @@
                 <div class="h-64 bg-white p-6 flex items-center justify-center border-b border-gray-100">
                     <img src="{{ asset('images/parts-3w-spares.jpg') }}" alt="3W Spare Parts List" class="max-h-full max-w-full object-contain rounded-xl" loading="lazy">
                 </div>
-                <div class="p-8 flex flex-col flex-grow">
+                <div class="p-5 sm:p-8 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-2xl font-extrabold text-gray-900">3W Spare Parts</h3>
                         <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase">E-Rickshaw &amp; Loader</span>

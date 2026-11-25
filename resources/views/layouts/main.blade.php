@@ -130,7 +130,7 @@
     <!-- KB Mobility Electric Navy & Cyan-Blue Theme -->
     <link rel="stylesheet" href="{{ asset('css/kb-theme.css') }}">
 </head>
-<body class="font-sans antialiased bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+<body class="font-sans antialiased bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
     <!-- Top Scroll Progress Bar -->
     <div id="kb-scroll-progress"></div>
     <!-- Top Bar -->
@@ -209,22 +209,22 @@
             </div>
 
             <!-- Desktop Nav Bar -->
-            <div class="hidden md:flex justify-center h-14 items-center">
-                <div class="flex space-x-1 items-center font-medium text-sm lg:text-[15px] whitespace-nowrap">
-                    <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Home</a>
-                    <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Services</a>
-                    <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Products</a>
-                    <a href="{{ route('batteries') }}" class="{{ request()->routeIs('batteries') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Batteries</a>
-                    <a href="{{ route('accessories') }}" class="{{ request()->routeIs('accessories') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">2W &amp; 3W Accessories</a>
-                    <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Gallery</a>
-                    <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">About Us</a>
-                    <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-3 py-2 rounded-md transition-colors">Contact Us</a>
+            <div class="hidden md:flex justify-center min-h-[3.5rem] py-1.5 items-center">
+                <div class="flex flex-wrap justify-center gap-x-0.5 lg:gap-x-1 gap-y-1 items-center font-medium text-xs lg:text-sm xl:text-[15px]">
+                    <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Home</a>
+                    <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Services</a>
+                    <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Products</a>
+                    <a href="{{ route('batteries') }}" class="{{ request()->routeIs('batteries') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Batteries</a>
+                    <a href="{{ route('accessories') }}" class="{{ request()->routeIs('accessories') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">2W &amp; 3W Accessories</a>
+                    <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Gallery</a>
+                    <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">About Us</a>
+                    <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'text-[#4CAF50] bg-green-50' : 'text-gray-700 hover:text-[#4CAF50] hover:bg-green-50/50' }} px-2.5 lg:px-3 py-2 rounded-md transition-colors whitespace-nowrap">Contact Us</a>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div x-show="mobileMenuOpen" x-collapse x-cloak style="display: none;" class="md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg">
+        <div x-show="mobileMenuOpen" x-collapse x-cloak style="display: none;" class="md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
             <div class="px-4 pt-2 pb-6 space-y-1 sm:px-3 flex flex-col">
                 <a href="{{ route('home') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Home</a>
                 <a href="{{ route('services') }}" class="text-gray-800 hover:text-[#4CAF50] block px-3 py-3 rounded-md text-base font-medium">Services</a>

@@ -293,11 +293,11 @@
                 <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Need Battery Repair or Lead-Acid to Lithium Upgrade?</h3>
                 <p class="text-gray-600 text-sm sm:text-base max-w-2xl">We also repair 2W, 3W (E-Rickshaw), and 4W batteries with cell balancing and BMS replacement, plus instant exchange bonus on old batteries.</p>
             </div>
-            <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-                <a href="{{ route('services') }}" class="px-6 py-3 bg-[#4CAF50] hover:bg-[#43a047] text-white font-bold text-sm rounded-xl shadow-md text-center transition-colors whitespace-nowrap">
+            <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0 w-full sm:w-auto">
+                <a href="{{ route('services') }}" class="px-6 py-3 bg-[#4CAF50] hover:bg-[#43a047] text-white font-bold text-sm rounded-xl shadow-md text-center transition-colors sm:whitespace-nowrap">
                     Battery Repair Services
                 </a>
-                <a href="{{ route('contact') }}" class="px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white font-bold text-sm rounded-xl shadow-sm text-center transition-colors whitespace-nowrap">
+                <a href="{{ route('contact') }}" class="px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white font-bold text-sm rounded-xl shadow-sm text-center transition-colors sm:whitespace-nowrap">
                     Contact Us
                 </a>
             </div>

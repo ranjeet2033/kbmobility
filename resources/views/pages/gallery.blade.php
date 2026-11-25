@@ -173,7 +173,7 @@
 
     <!-- Lightbox Modal for Photos & Videos -->
     <div x-show="modalOpen" x-cloak style="display: none;" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4" @click.self="modalOpen = false">
-        <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
             <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
                 <h3 class="text-lg font-extrabold text-gray-900" x-text="modalTitle"></h3>
                 <button @click="modalOpen = false" class="text-gray-500 hover:text-gray-900 text-2xl leading-none">&times;</button>

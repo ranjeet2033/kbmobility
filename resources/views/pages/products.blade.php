@@ -364,9 +364,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative rounded-3xl overflow-hidden bg-gray-900">
             <div class="absolute inset-0 bg-gradient-to-r from-[#4CAF50]/20 to-transparent"></div>
-            <div class="relative z-10 px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div class="relative z-10 px-5 py-8 sm:px-8 sm:py-12 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left">
                 <div>
-                    <h3 class="text-3xl font-extrabold text-white mb-2">Need a Test Ride or Spare Parts in Delhi?</h3>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">Need a Test Ride or Spare Parts in Delhi?</h3>
                     <p class="text-gray-400 text-lg">Visit our showroom at Hastsal Village, Uttam Nagar West or explore our 2W &amp; 3W Accessories.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">

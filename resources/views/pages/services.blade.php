@@ -40,7 +40,7 @@
             <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Complete lithium &amp; LiFePO4 battery diagnostics, weak cell replacement, and BMS repair with workshop photo &amp; video documentation.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <!-- 2W Battery Repairing -->
             <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:border-[#4CAF50]/50 transition-all flex flex-col">
                 <div class="relative h-52 bg-white p-4 flex items-center justify-center">
@@ -101,7 +101,7 @@
             <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Expert MOSFET, IC, transformer, and cooling fan repairs for IP57, IP67, and IP65 EV chargers.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <!-- IP57 Charger Repair -->
             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
                 <div class="relative h-52 bg-white p-4 flex items-center justify-center">
