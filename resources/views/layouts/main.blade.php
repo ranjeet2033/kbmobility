@@ -345,15 +345,61 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918808363701" target="_blank" rel="noopener noreferrer"
-        class="fixed bottom-6 right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-green-500 transition-all transform hover:scale-110 z-50 flex items-center justify-center kb-whatsapp-pulse"
-        aria-label="Chat on WhatsApp">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.339-.153-.878-.344-1.63-1.092-.931-.931-1.378-1.996-1.558-2.29-.18-.293-.019-.48.163-.661.16-.16.353-.393.528-.592.175-.201.233-.343.349-.572.116-.23.058-.432-.029-.607-.087-.175-.776-1.874-1.063-2.564-.28-.673-.564-.582-.776-.593-.199-.01-.429-.012-.66-.012s-.607.086-.925.433c-.318.347-1.214 1.186-1.214 2.89s1.243 3.348 1.417 3.58c.174.232 2.44 3.731 5.912 5.234.827.359 1.472.573 1.974.733.829.263 1.584.225 2.18.136.666-.101 2.05-.837 2.339-1.646.291-.809.291-1.503.204-1.646-.087-.143-.318-.23-.665-.403z"/>
-            <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.48-8.45z"/>
-        </svg>
-    </a>
+    <!-- WhatsApp Floating Chat Widget -->
+    <div x-data="{ waOpen: false, waMsg: 'Hi KB Mobility, I have an inquiry regarding EV vehicles / services.' }" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
+        <!-- Quick Chat Popup -->
+        <div x-show="waOpen" x-transition x-cloak style="display: none;" @click.outside="waOpen = false"
+            class="mb-3 w-72 sm:w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-[#075E54] to-[#128C7E] px-4 py-3.5 text-white flex items-center justify-between">
+                <div class="flex items-center space-x-2.5">
+                    <div class="relative w-9 h-9 bg-white/15 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.75.72 5.44 2.09 7.81L.5 31.5l7.91-2.07A15.43 15.43 0 0016 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zm0 28.3c-2.46 0-4.87-.66-6.97-1.91l-.5-.3-4.69 1.23 1.25-4.57-.33-.52A12.75 12.75 0 013.2 16C3.2 8.94 8.94 3.2 16 3.2S28.8 8.94 28.8 16 23.06 28.8 16 28.8zm7.02-9.56c-.38-.19-2.27-1.12-2.62-1.25-.35-.13-.61-.19-.86.19-.26.38-.99 1.25-1.21 1.5-.22.26-.45.29-.83.1-.38-.19-1.62-.6-3.09-1.91-1.14-1.02-1.91-2.28-2.14-2.66-.22-.38-.02-.59.17-.78.17-.17.38-.45.58-.67.19-.22.26-.38.38-.64.13-.26.06-.48-.03-.67-.1-.19-.86-2.08-1.18-2.85-.31-.75-.63-.65-.86-.66h-.74c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2s1.38 3.71 1.57 3.97c.19.26 2.71 4.14 6.57 5.81.92.4 1.63.63 2.19.81.92.29 1.76.25 2.42.15.74-.11 2.27-.93 2.59-1.82.32-.9.32-1.66.22-1.82-.09-.16-.35-.26-.73-.45z"/>
+                        </svg>
+                        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-[#25D366] border-2 border-[#075E54] rounded-full"></span>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold leading-tight">KB Mobility Support</div>
+                        <div class="text-[11px] text-green-100">Typically replies within minutes</div>
+                    </div>
+                </div>
+                <button @click="waOpen = false" aria-label="Close WhatsApp Chat" class="text-white/80 hover:text-white text-xl leading-none p-1">&times;</button>
+            </div>
+
+            <div class="p-4 bg-[#ECE5DD]/40 space-y-3">
+                <div class="bg-white rounded-xl rounded-tl-none p-3 text-xs text-gray-700 shadow-sm border border-gray-100">
+                    Hi! 👋 How can we help you today? Choose a quick option or type your message:
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                    <button type="button" @click="waMsg = 'Hi KB Mobility, I want details about 2W / 3W Electric Vehicles.'" class="text-[11px] font-semibold bg-white hover:bg-green-50 text-gray-700 hover:text-[#075E54] px-2.5 py-1 rounded-full border border-gray-200 transition-colors">2W / 3W Vehicles</button>
+                    <button type="button" @click="waMsg = 'Hi KB Mobility, I need Battery / Charger / Controller Repair.'" class="text-[11px] font-semibold bg-white hover:bg-green-50 text-gray-700 hover:text-[#075E54] px-2.5 py-1 rounded-full border border-gray-200 transition-colors">EV Repair Service</button>
+                    <button type="button" @click="waMsg = 'Hi KB Mobility, I want to buy Batteries / 2W-3W Spare Parts.'" class="text-[11px] font-semibold bg-white hover:bg-green-50 text-gray-700 hover:text-[#075E54] px-2.5 py-1 rounded-full border border-gray-200 transition-colors">Batteries &amp; Spares</button>
+                </div>
+                <textarea x-model="waMsg" rows="2" class="w-full text-xs bg-white text-gray-800 rounded-xl border border-gray-200 p-2.5 focus:ring-[#25D366] focus:border-[#25D366] resize-none" placeholder="Write your message..."></textarea>
+                <a :href="'https://wa.me/918808363701?text=' + encodeURIComponent(waMsg)" target="_blank" rel="noopener noreferrer"
+                    class="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 transition-colors">
+                    <svg class="w-4 h-4" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.75.72 5.44 2.09 7.81L.5 31.5l7.91-2.07A15.43 15.43 0 0016 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zm0 28.3c-2.46 0-4.87-.66-6.97-1.91l-.5-.3-4.69 1.23 1.25-4.57-.33-.52A12.75 12.75 0 013.2 16C3.2 8.94 8.94 3.2 16 3.2S28.8 8.94 28.8 16 23.06 28.8 16 28.8zm7.02-9.56c-.38-.19-2.27-1.12-2.62-1.25-.35-.13-.61-.19-.86.19-.26.38-.99 1.25-1.21 1.5-.22.26-.45.29-.83.1-.38-.19-1.62-.6-3.09-1.91-1.14-1.02-1.91-2.28-2.14-2.66-.22-.38-.02-.59.17-.78.17-.17.38-.45.58-.67.19-.22.26-.38.38-.64.13-.26.06-.48-.03-.67-.1-.19-.86-2.08-1.18-2.85-.31-.75-.63-.65-.86-.66h-.74c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2s1.38 3.71 1.57 3.97c.19.26 2.71 4.14 6.57 5.81.92.4 1.63.63 2.19.81.92.29 1.76.25 2.42.15.74-.11 2.27-.93 2.59-1.82.32-.9.32-1.66.22-1.82-.09-.16-.35-.26-.73-.45z"/>
+                    </svg>
+                    Start WhatsApp Chat
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Trigger Button -->
+        <button type="button" @click="waOpen = !waOpen" aria-label="Chat on WhatsApp"
+            class="group bg-[#25D366] hover:bg-[#1ebe5d] text-white px-3.5 py-3 sm:px-4 sm:py-3 rounded-full shadow-xl transition-all transform hover:scale-105 flex items-center gap-2.5 kb-whatsapp-pulse">
+            <span class="relative flex items-center justify-center">
+                <svg class="w-6 h-6" viewBox="0 0 32 32" fill="currentColor">
+                    <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.75.72 5.44 2.09 7.81L.5 31.5l7.91-2.07A15.43 15.43 0 0016 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zm0 28.3c-2.46 0-4.87-.66-6.97-1.91l-.5-.3-4.69 1.23 1.25-4.57-.33-.52A12.75 12.75 0 013.2 16C3.2 8.94 8.94 3.2 16 3.2S28.8 8.94 28.8 16 23.06 28.8 16 28.8zm7.02-9.56c-.38-.19-2.27-1.12-2.62-1.25-.35-.13-.61-.19-.86.19-.26.38-.99 1.25-1.21 1.5-.22.26-.45.29-.83.1-.38-.19-1.62-.6-3.09-1.91-1.14-1.02-1.91-2.28-2.14-2.66-.22-.38-.02-.59.17-.78.17-.17.38-.45.58-.67.19-.22.26-.38.38-.64.13-.26.06-.48-.03-.67-.1-.19-.86-2.08-1.18-2.85-.31-.75-.63-.65-.86-.66h-.74c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2s1.38 3.71 1.57 3.97c.19.26 2.71 4.14 6.57 5.81.92.4 1.63.63 2.19.81.92.29 1.76.25 2.42.15.74-.11 2.27-.93 2.59-1.82.32-.9.32-1.66.22-1.82-.09-.16-.35-.26-.73-.45z"/>
+                </svg>
+                <span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-white rounded-full flex items-center justify-center">
+                    <span class="w-1.5 h-1.5 bg-[#25D366] rounded-full animate-ping"></span>
+                </span>
+            </span>
+            <span class="hidden sm:inline text-xs font-bold tracking-wide uppercase">Chat with us</span>
+        </button>
+    </div>
 
     <!-- Scroll Reveal & Stat Counter Animation Script -->
     <script>
