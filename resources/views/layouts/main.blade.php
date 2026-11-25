@@ -120,8 +120,8 @@
     <!-- Alpine.js for Mobile Menu -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <!-- Pre-compiled Tailwind & App Assets (with safe fallback) -->
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+    <!-- Pre-compiled Tailwind & App Assets (uses live Tailwind v4 when node_modules/fresh build is absent) -->
+    @if (file_exists(base_path('node_modules')) && (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot'))))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
